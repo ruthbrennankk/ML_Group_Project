@@ -52,7 +52,7 @@ for line in Lines:
     id_list = soup.find_all('li', class_='fpa-features__item')
     list = soup.find_all('span', class_='fpa-features__item__text')
 
-    value_added = {'transmission': False, 'colours': False, 'mileage': False, 'year': False, 'seats': False, 'doors': False}
+    value_added = {'transmission': False, 'colour': False, 'mileage': False, 'year': False, 'seats': False, 'doors': False}
 
     #Printing ids to compare
     for i in range(len(list)):
@@ -61,7 +61,7 @@ for line in Lines:
             transmission.append((list[i]).get_text())
             update_dict(value_added, 'transmission')
         elif id_name == 'colour':
-            colours.append((list[i]).get_text())
+            colour.append((list[i]).get_text())
             update_dict(value_added, 'colour')
         elif id_name == 'mileage':
             mileage.append((list[i]).get_text())
@@ -77,18 +77,18 @@ for line in Lines:
             update_dict(value_added, 'doors')
         #print((list[i]).get_text())
 
-    if value_added['transmission']= False:
+    if value_added['transmission'] == False:
         transmission.append('$')
-    if value_added['colour']= False:
-        transmission.append('$')
-    if value_added['mileage']= False:
-        transmission.append('$')
-    if value_added['year']= False:
-        transmission.append('$')
-    if value_added['seats']= False:
-        transmission.append('$')
-    if value_added['doors']= False:
-        transmission.append('$')
+    if value_added['colour'] == False:
+        colour.append('$')
+    if value_added['mileage'] == False:
+        mileage.append('$')
+    if value_added['year'] == False:
+        year.append('$')
+    if value_added['seats'] == False:
+        seats.append('$')
+    if value_added['doors'] == False:
+        doors.append('$')
 
     # print(res)
     json_object = json.loads(res.contents[0])
@@ -102,10 +102,10 @@ for line in Lines:
     prices.append(json_object["offers"]["price"])
 
 
-rows = [brands, models, prices]
+rows = [brands, models, prices, transmission, colour, mileage, year, seats, doors]
 rows = np.array(rows)
 
-d = {'Brands': brands, 'Models': models, 'Prices': prices}
+d = {'Brands': brands, 'Models': models, 'Transmission': transmission, 'Colour': colour, 'Mileage': mileage, 'Year': year, 'Seats': seats, 'Doors': doors, 'Prices': prices }
 df = pd.DataFrame(data=d)
 df.to_csv('car.csv')
 
