@@ -15,4 +15,4 @@ def download_and_save_page(url, file):
 # https://www.carzone.ie/used-cars/ireland/leitrim
 #
 
-download_and_save_page('https://www.carzone.ie/used-cars/ireland/leitrim', 'test.txt')
+download_and_save_page('https://www.carzone.ie/used-cars/ireland/leitrim', 'test.html')
