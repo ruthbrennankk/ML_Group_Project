@@ -2,6 +2,9 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup as BeautifulSoup
 import json
 import ssl
+import pandas as pd
+import numpy as np
+
 ssl._create_default_https_context = ssl._create_unverified_context
 
 def download_and_save_page(url, file):
@@ -12,41 +15,65 @@ def download_and_save_page(url, file):
     return html_code
 
 
-# # Using readlines()
-# file1 = open('links.txt', 'r')
-# Lines = file1.readlines()
+# Using readlines()
+file1 = open('links.txt', 'r')
+Lines = file1.readlines()
+
+urls = []
+brands = []
+models = []
+transmission = []
+colour = []
+mileage = []
+year = []
+seats = []
+doors = []
+prices = []
+
+count = 0
+# Loops through the urls
+for line in Lines:
+    # print url
+    print(str(line))
+    urls.append(line)
+    # get data
+    download_and_save_page(str(line), 'car.html')
+
+    with open('car.html', 'r') as f:
+        contents = f.read()
+
+    #Set up soup
+    soup = BeautifulSoup(contents, 'html.parser')
+    # Finds
+    res = soup.find('script', type='application/ld+json')
+    # print(res)
+    json_object = json.loads(res.contents[0])
+    # print(json_object)
+    # print(json_object["brand"])
+    # print(json_object["model"])
+    # print(json_object["offers"]["price"])
+
+    brands.append(json_object["brand"])
+    models.append(json_object["model"])
+    prices.append(json_object["offers"]["price"])
+
+
+rows = [brands, models, prices]
+rows = np.array(rows)
+
+d = {'Brands': brands, 'Models': models, 'Prices': prices}
+df = pd.DataFrame(data=d)
+df.to_csv('car.csv')
+
 #
-# count = 0
-# # Strips the newline character
-# for line in Lines:
-#     print("Line{}: {}".format(count, line.strip()))
-
-# Notes for gettings data
+#     id_list = soup.find_all('li', class_='fpa-features__item')
+#     list = soup.find_all('span', class_='fpa-features__item__text')
+# # print(id_list)
+# # print(list)
 #
-#   links = soup.find_all('a', href=True, class_='car-link')
-#    for link in links:
-#     print(link['href'])
-#
+#     for i in range(len(list)):
+#         print((id_list[i]).get('id'))
+#         print((list[i]).get_text())
 
-with open('car_test.html', 'r') as f:
-    contents = f.read()
-
-soup = BeautifulSoup(contents, 'html.parser')
-# #print(soup.find('span', class_='fpa-features__item__text').get_text())
-# id_list = soup.find_all('li', class_='fpa-features__item')
-# list = soup.find_all('span', class_='fpa-features__item__text')
-# print(id_list)
-# print(list)
-#
-# for i in range(len(list)):
-#     print((id_list[i]).get('id'))
-#     print((list[i]).get_text())
-
-
-res = soup.find('script', type='application/ld+json')
-print(res)
-json_object = json.loads(res.contents[0])
-print(json_object)
-print(json_object["@context"])
 
 #download_and_save_page('https://www.carzone.ie/used-cars/audi/a4/fpa/202003078142361?journey=Search', 'car_test.html')
