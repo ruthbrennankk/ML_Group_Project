@@ -1,5 +1,6 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup as BeautifulSoup
+import json
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -41,6 +42,11 @@ soup = BeautifulSoup(contents, 'html.parser')
 #     print((id_list[i]).get('id'))
 #     print((list[i]).get_text())
 
-print(soup.find('script', type='application/ld+json'))
+
+res = soup.find('script', type='application/ld+json')
+print(res)
+json_object = json.loads(res.contents[0])
+print(json_object)
+print(json_object["@context"])
 
 #download_and_save_page('https://www.carzone.ie/used-cars/audi/a4/fpa/202003078142361?journey=Search', 'car_test.html')
