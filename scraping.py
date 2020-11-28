@@ -14,6 +14,9 @@ def download_and_save_page(url, file):
     f.close()
     return html_code
 
+def update_dict(the_dict, the_key):
+    the_dict[the_key] = True
+
 
 # Using readlines()
 file1 = open('links.txt', 'r')
@@ -46,6 +49,47 @@ for line in Lines:
     soup = BeautifulSoup(contents, 'html.parser')
     # Finds
     res = soup.find('script', type='application/ld+json')
+    id_list = soup.find_all('li', class_='fpa-features__item')
+    list = soup.find_all('span', class_='fpa-features__item__text')
+
+    value_added = {'transmission': False, 'colours': False, 'mileage': False, 'year': False, 'seats': False, 'doors': False}
+
+    #Printing ids to compare
+    for i in range(len(list)):
+        id_name = (id_list[i]).get('id')
+        if id_name == 'transmission':
+            transmission.append((list[i]).get_text())
+            update_dict(value_added, 'transmission')
+        elif id_name == 'colour':
+            colours.append((list[i]).get_text())
+            update_dict(value_added, 'colour')
+        elif id_name == 'mileage':
+            mileage.append((list[i]).get_text())
+            update_dict(value_added, 'mileage')
+        elif id_name == 'year':
+            year.append((list[i]).get_text())
+            update_dict(value_added, 'year')
+        elif id_name == 'seats':
+            seats.append((list[i]).get_text())
+            update_dict(value_added, 'seats')
+        elif id_name == 'doors':
+            doors.append((list[i]).get_text())
+            update_dict(value_added, 'doors')
+        #print((list[i]).get_text())
+
+    if value_added['transmission']= False:
+        transmission.append('$')
+    if value_added['colour']= False:
+        transmission.append('$')
+    if value_added['mileage']= False:
+        transmission.append('$')
+    if value_added['year']= False:
+        transmission.append('$')
+    if value_added['seats']= False:
+        transmission.append('$')
+    if value_added['doors']= False:
+        transmission.append('$')
+
     # print(res)
     json_object = json.loads(res.contents[0])
     # print(json_object)
@@ -74,6 +118,19 @@ df.to_csv('car.csv')
 #     for i in range(len(list)):
 #         print((id_list[i]).get('id'))
 #         print((list[i]).get_text())
+
+#order of list
+# engine
+# bodytype
+# transmission
+# colour
+# mileage
+# year
+# owners
+# doors
+# seats
+# nct
+# tax-band
 
 
 #download_and_save_page('https://www.carzone.ie/used-cars/audi/a4/fpa/202003078142361?journey=Search', 'car_test.html')
