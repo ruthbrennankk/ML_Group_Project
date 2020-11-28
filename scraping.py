@@ -31,9 +31,13 @@ with open('car_test.html', 'r') as f:
 
 soup = BeautifulSoup(contents, 'html.parser')
 #print(soup.find('span', class_='fpa-features__item__text').get_text())
+id_list = soup.find_all('li', class_='fpa-features__item')
 list = soup.find_all('span', class_='fpa-features__item__text')
+print(id_list)
+print(list)
 
-for item in list :
-    print(item.get_text())
+for i in range(len(list)):
+    print((id_list[i]).get('id'))
+    print((list[i]).get_text())
 
 #download_and_save_page('https://www.carzone.ie/used-cars/audi/a4/fpa/202003078142361?journey=Search', 'car_test.html')
