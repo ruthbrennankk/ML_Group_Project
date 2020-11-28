@@ -11,8 +11,13 @@ def download_and_save_page(url, file):
     return html_code
 
 
+# Using readlines()
+file1 = open('links.txt', 'r')
+Lines = file1.readlines()
 
-# https://www.carzone.ie/used-cars/ireland/leitrim
-# https://www.carzone.ie/used-cars/audi/a4/fpa/202003078142361?journey=Search
+count = 0
+# Strips the newline character
+for line in Lines:
+    print("Line{}: {}".format(count, line.strip()))
 
-download_and_save_page('https://www.carzone.ie/used-cars/audi/a4/fpa/202003078142361?journey=Search', 'car_test.html')
+#download_and_save_page('https://www.carzone.ie/used-cars/audi/a4/fpa/202003078142361?journey=Search', 'car_test.html')
