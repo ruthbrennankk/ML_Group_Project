@@ -1,53 +1,51 @@
 ,Brands,Models,Transmission,Colour,Mileage,Year,Seats,Doors,Prices
-0,Audi,A4,Manual,Black (Metallic),"166,965 km",2016 (161),5 seats,4 doors,15950
-1,Audi,A6,Manual,Black,"130,353 km",2018 (181),5 seats,4 doors,24500
-2,BMW,3 Series,Manual,White,"225,302 km",2013 (131),5 seats,5 doors,8950
-3,BMW,4 Series,Manual,Grey,"109,432 km",2014 (142),4 seats,2 doors,17995
-4,BMW,5 Series,Automatic,Blue,"141,618 km",2018 (181),5 seats,4 doors,26869
-5,BMW,5 Series,Manual,Black,"226,911 km",2012,$,4 doors,8950
-6,Citroen,C4,Manual,White,"120,698 km",2017 (171),5 seats,5 doors,12750
-7,Ford,Focus,Manual,Black,"85,293 km",2019 (191),5 seats,5 doors,18500
-8,Ford,Focus,Manual,White,"141,618 km",2017 (171),5 seats,5 doors,13750
-9,Ford,Focus,Manual,Black,"122,307 km",2017 (171),5 seats,5 doors,13750
-10,Ford,Focus,Manual,Silver,"159,321 km",2015 (151),5 seats,5 doors,10500
-11,Ford,Focus,Manual,Blue,"241,395 km",2007,$,3 doors,5000
-12,Ford,Kuga,Manual,Blue,"111,042 km",2018 (181),5 seats,5 doors,21999
-13,Ford,Mondeo,Manual,Black,"101,386 km",2018 (181),5 seats,5 doors,18250
-14,Ford,Mondeo,Manual,Black,"86,902 km",2018 (181),5 seats,5 doors,17899
-15,Ford,Transit Tourneo,Manual,White,"175,414 km",2013 (131),3 seats,5 doors,6750
-16,Kia,Picanto,Manual,Red,"56,326 km",2014 (142),$,5 doors,6000
-17,Mazda,CX-5,Manual,Red,"114,260 km",2015 (152),5 seats,5 doors,19495
-18,Mercedes-Benz,CLS-Class,Automatic,Grey,"241,395 km",2008,4 seats,4 doors,5500
-19,MINI,Hatch,Manual,Black,"131,963 km",2017 (171),4 seats,3 doors,14500
-20,Nissan,Leaf,Automatic,Grey,"41,842 km",2017 (171),5 seats,5 doors,14250
-21,Nissan,Qashqai,Manual,Blue,"38,623 km",2018 (181),5 seats,5 doors,17999
-22,Nissan,Qashqai,Manual,Black (Metallic),"127,939 km",2016 (162),5 seats,5 doors,14999
-23,Opel,Corsa,Manual,Brown,"120,698 km",2015 (151),5 seats,5 doors,8500
-24,Opel,Insignia,Automatic,Red,"6,786 km",2020 (201),5 seats,5 doors,35995
-25,Opel,Insignia,Manual,Black,"172,195 km",2016 (161),5 seats,5 doors,10900
-26,Opel,Insignia,Manual,Silver,"233,000 km",2011,$,4 doors,3500
-27,Peugeot,308,Manual,Silver,"91,000 km",2017 (171),5 seats,5 doors,11500
-28,Peugeot,407,Manual,Blue,"257,488 km",2005,$,5 doors,3500
-29,Peugeot,Other,Manual,White,$,2021 (211),3 seats,5 doors,93
-30,Renault,Scenic,Manual,Yellow,"148,056 km",2007,5 seats,5 doors,350
-31,Skoda,Octavia,Manual,Grey,"130,353 km",2018 (181),5 seats,5 doors,17500
-32,Skoda,Octavia,Manual,Black,"123,916 km",2018 (181),5 seats,5 doors,17500
-33,Skoda,Octavia,Manual,Black,"112,651 km",2018 (181),5 seats,5 doors,17250
-34,Skoda,Octavia,Manual,Grey,"148,056 km",2017 (171),5 seats,5 doors,16500
-35,Skoda,Octavia,Manual,Blue,"111,042 km",2017 (171),5 seats,5 doors,15500
-36,Skoda,Octavia,Manual,Blue,"168,977 km",2016 (161),5 seats,5 doors,12999
-37,Toyota,YARIS,Manual,Silver,"154,493 km",2008,5 seats,5 doors,4999
-38,Vauxhall,Corsa,Manual,Brown,"120,698 km",2015 (151),5 seats,5 doors,8500
-39,Vauxhall,Insignia,Manual,Black,"172,195 km",2016 (161),5 seats,5 doors,10900
-40,Volkswagen,Golf,Manual,Blue,"148,056 km",2016 (161),5 seats,5 doors,13999
-41,Volkswagen,Golf,Manual,Black,"95,813 km",2015 (151),,5 doors,14950
-42,Volkswagen,Golf,Manual,Silver,"300,000 km",2010,5 seats,5 doors,6750
-43,Volkswagen,Passat,Manual,Grey,"61,153 km",2018 (181),5 seats,4 doors,22500
-44,Volkswagen,Passat,Manual,Silver,"70,809 km",2018 (181),5 seats,4 doors,21500
-45,Volkswagen,Passat,Automatic,Silver,"144,837 km",2018 (181),5 seats,5 doors,19999
-46,Volkswagen,Passat,Manual,Blue,"151,274 km",2017 (171),5 seats,5 doors,16900
-47,Volkswagen,Tiguan,Manual,Blue,"289,674 km",2011,5 seats,5 doors,9500
-48,Volvo,S60,Manual,Black,"159,321 km",2017 (171),5 seats,4 doors,16500
-49,Volvo,V40,Automatic,Grey,"82,074 km",2018 (181),5 seats,5 doors,19999
-50,Volvo,V40,Manual,Black,"185,070 km",2017 (171),5 seats,5 doors,15500
-51,Volvo,V40,Manual,Black,"172,195 km",2017 (171),5 seats,5 doors,13500
+0,0,5,0,1,166965,4,5,4,15950
+1,0,6,0,0,130353,2,5,4,24500
+2,1,0,0,7,225302,7,5,5,8950
+3,1,2,0,4,109432,6,4,2,17995
+4,1,4,1,2,141618,2,5,4,26869
+5,1,4,0,0,226911,8,$,4,8950
+6,2,7,0,7,120698,3,5,5,12999
+7,3,11,0,0,85293,1,5,5,18999
+8,3,11,0,7,141618,3,5,5,13750
+9,3,11,0,0,122307,3,5,5,13750
+10,3,11,0,6,159321,5,5,5,10500
+11,3,11,0,2,241395,13,$,3,5000
+12,3,15,0,2,111042,2,5,5,21999
+13,3,17,0,0,101386,2,5,5,18250
+14,3,17,0,0,86902,2,5,5,18999
+15,3,25,0,7,175414,7,3,5,6750
+16,4,20,0,5,56326,6,$,5,6000
+17,6,9,0,5,114260,5,5,5,19495
+18,7,8,1,4,241395,12,4,4,5500
+19,5,13,0,0,131963,3,4,3,14500
+20,8,16,1,4,41842,3,5,5,14500
+21,8,21,0,2,38623,2,5,5,18500
+22,8,21,0,1,127939,4,5,5,14999
+23,9,10,0,3,120698,5,5,5,8500
+24,9,14,1,5,6786,0,5,5,35995
+25,9,14,0,0,172195,4,5,5,10999
+26,9,14,0,6,233000,9,$,4,3500
+27,10,1,0,6,91000,3,5,5,11500
+28,10,3,0,2,257488,15,$,5,3500
+29,11,23,0,8,148056,13,5,5,350
+30,12,18,0,4,130353,2,5,5,17500
+31,12,18,0,0,123916,2,5,5,17500
+32,12,18,0,0,112651,2,5,5,17250
+33,12,18,0,4,148056,3,5,5,16500
+34,12,18,0,2,111042,3,5,5,16500
+35,12,18,0,2,168977,4,5,5,12999
+36,13,27,0,6,154493,12,5,5,4999
+37,14,10,0,3,120698,5,5,5,8500
+38,14,14,0,0,172195,4,5,5,10999
+39,15,12,0,2,148056,4,5,5,13999
+40,15,12,0,0,95813,5,$,5,14950
+41,15,12,0,6,300000,10,5,5,6750
+42,15,19,0,4,61153,2,5,4,22999
+43,15,19,0,6,70809,2,5,4,21999
+44,15,19,1,6,144837,2,5,5,19999
+45,15,19,0,2,151274,3,5,5,16900
+46,15,24,0,2,289674,9,5,5,9250
+47,16,22,0,0,159321,3,5,4,16500
+48,16,26,1,4,82074,2,5,5,19999
+49,16,26,0,0,185070,3,5,5,15500
