@@ -17,7 +17,6 @@ def download_and_save_page(url, file):
 def update_dict(the_dict, the_key):
     the_dict[the_key] = True
 
-
 # Using readlines()
 file1 = open('links.txt', 'r')
 Lines = file1.readlines()
@@ -25,7 +24,7 @@ Lines = file1.readlines()
 urls = []
 brands = []
 models = []
-transmission = []
+transmission = [] # Automatic = 1, Manual = 0
 colour = []
 mileage = []
 year = []
@@ -57,23 +56,36 @@ for line in Lines:
     #Printing ids to compare
     for i in range(len(list)):
         id_name = (id_list[i]).get('id')
-        if id_name == 'transmission':
-            transmission.append((list[i]).get_text())
+        if id_name == 'transmission':   # Note There maybe an electric transmission
+            if ((list[i]).get_text() == 'Manual') :
+               transmission.append(0)
+            elif ((list[i]).get_text() == 'Automatic') :
+                transmission.append(1)
             update_dict(value_added, 'transmission')
         elif id_name == 'colour':
             colour.append((list[i]).get_text())
             update_dict(value_added, 'colour')
         elif id_name == 'mileage':
-            mileage.append((list[i]).get_text())
+            formatted = ""
+            str_kms = (list[i]).get_text()
+            for i in range(len(str_kms)) :
+                if str_kms[i].isdigit() :
+                    formatted = formatted + str_kms[i]
+            mileage.append(formatted)
             update_dict(value_added, 'mileage')
-        elif id_name == 'year':
-            year.append((list[i]).get_text())
+        elif id_name == 'year': # Note With new data set make sure year is before 161 etc
+            newyear = int(list[i].get_text()[0:4])
+            age = 2020 - newyear
+            print(age)
+            year.append(age)
             update_dict(value_added, 'year')
-        elif id_name == 'seats':
-            seats.append((list[i]).get_text())
+        elif id_name == 'seats': # Note Also here check that number of seats & doors are first
+            print(list[i].get_text()[0])
+            seats.append(list[i].get_text()[0])
             update_dict(value_added, 'seats')
         elif id_name == 'doors':
-            doors.append((list[i]).get_text())
+            print(list[i].get_text()[0])
+            doors.append((list[i].get_text()[0]))
             update_dict(value_added, 'doors')
         #print((list[i]).get_text())
 
@@ -107,6 +119,9 @@ rows = np.array(rows)
 
 d = {'Brands': brands, 'Models': models, 'Transmission': transmission, 'Colour': colour, 'Mileage': mileage, 'Year': year, 'Seats': seats, 'Doors': doors, 'Prices': prices }
 df = pd.DataFrame(data=d)
+
+
+
 df.to_csv('car.csv')
 
 #
@@ -131,6 +146,3 @@ df.to_csv('car.csv')
 # seats
 # nct
 # tax-band
-
-
-#download_and_save_page('https://www.carzone.ie/used-cars/audi/a4/fpa/202003078142361?journey=Search', 'car_test.html')
