@@ -38,7 +38,7 @@ def labelEncode(categories, car_df) :
 
 
 # Using readlines()
-file1 = open('extra.txt', 'r')
+file1 = open('not using/extra.txt', 'r')
 Lines = file1.readlines()
 
 urls = []

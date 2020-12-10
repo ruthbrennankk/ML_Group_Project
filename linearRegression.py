@@ -1,24 +1,23 @@
 import numpy as np
 import pandas as pd
-from sklearn.neighbors import KNeighborsRegressor
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-
+from mpl_toolkits.mplot3d import Axes3D
+from matplotlib  import cm
 from sklearn.linear_model import LogisticRegression
-import numpy as np
-import pandas as pd
 from sklearn.preprocessing import PolynomialFeatures
-from sklearn.model_selection import KFold
 from sklearn import linear_model
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error
 import math
-import matplotlib.pyplot as plt
-from matplotlib import cm
 
-def generate_gaussian_kernel_function(gamma):
-    weights = lambda dists: np.exp(-gamma * (dists ** 2))
-    return lambda dists: weights(dists) / np.sum(weights(dists))
-
+def normalise(arr) :
+    # Find the mean
+    m = np.mean(arr)
+    # Find standard deviation
+    s = np.amax(arr) - np.amin(arr) #np.std(arr)
+    # normalise data using z score
+    return (arr - m) / s
 
 def read(filename):
     df = pd.read_csv(filename, comment='#', header=None)
@@ -35,14 +34,17 @@ def read(filename):
 
     return (X, y)
 
+def addFeatures(X):
+    poly = PolynomialFeatures(5)
+    return poly.fit_transform(X)
 
-def normalise(arr) :
-    # Find the mean
-    m = np.mean(arr)
-    # Find standard deviation
-    s = np.amax(arr) - np.amin(arr) #np.std(arr)
-    # normalise data using z score
-    return (arr - m) / s
+def ridge(X, y, c):
+    clf = linear_model.Ridge(alpha=1/(2*c))
+    clf.fit(X, y)
+    print(clf.coef_)
+    print(clf.intercept_)
+    return clf, clf.coef_, clf.intercept_
+
 
 def plotErrorBar(x, mean, var, xlabel, title, image):
     # create an index for each tick position
@@ -59,21 +61,19 @@ def plotErrorBar(x, mean, var, xlabel, title, image):
     fig.show()
     #fig.savefig(image)
 
-def crossValidationK(X, y, ks):
-    newks = []
+def crossValidationK(X, y, cs):
+    newcs = []
     yMeanValues = []
     yVarianceValues = []
     fold = 5
-    gamma = 1
-    kernel = generate_gaussian_kernel_function(gamma)
 
-    for k in ks:
+    for c in cs:
         means = []
         mean = 0
         kf = KFold(n_splits=fold)
         for train, test in kf.split(X):
-            #   kNN
-            model = KNeighborsRegressor(n_neighbors=k, weights=kernel).fit(X[train], y[train])
+            #   Ridge
+            model = linear_model.Ridge(alpha=1 / (2 * c)).fit(X[train], y[train])
             ypred = model.predict(X[test])
 
             tmp = mean_squared_error(y[test], ypred)
@@ -89,17 +89,26 @@ def crossValidationK(X, y, ks):
             sum += tmp * tmp
         sum = sum / (fold - 1)
         yVarianceValues.append(math.sqrt(sum))
-        newks.append(float(k))
+        newcs.append(float(c))
 
     npMeans = np.array(yMeanValues)
     npVar = np.array(yVarianceValues)
-    plotErrorBar(newks, npMeans, npVar, 'k', 'K vs Mean - kNN', 'errorbarK.png')
+    plotErrorBar(newcs, npMeans, npVar, 'c', 'C vs Mean - Ridge', 'errorbar_RC.png')
+
 
 
 def main():
-    #   Get Training Data
-    X, y = read('allKerryCars.csv')
-    # Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.2)
-    crossValidationK(X, y, [1, 3, 5, 10, 20 ])
+    # Read in the data (using pandas)
+    oldX,y = read('allKerryCars.csv')
+
+    # (i)(b) - add extra polynomial features
+    # equal to all combinations of powers of the two features up to power 5
+    X = addFeatures(oldX)
+    #print(X)
+
+    # Cross val for C
+    crossValidationK(X, y, [1, 3, 5, 10, 20])
+
+
 
 main()
