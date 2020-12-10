@@ -38,7 +38,7 @@ def labelEncode(categories, car_df) :
 
 
 # Using readlines()
-file1 = open('links.txt', 'r')
+file1 = open('extra.txt', 'r')
 Lines = file1.readlines()
 
 urls = []
@@ -71,7 +71,7 @@ for line in Lines:
     id_list = soup.find_all('li', class_='fpa-features__item')
     list = soup.find_all('span', class_='fpa-features__item__text')
 
-    value_added = {'transmission': False, 'colour': False, 'mileage': False, 'year': False, 'seats': False, 'doors': False}
+    value_added = {'transmission': False, 'colour': False, 'mileage': False, 'year': False}#, 'seats': False, 'doors': False}
 
     #Printing ids to compare
     for i in range(len(list)):
@@ -99,14 +99,14 @@ for line in Lines:
             # print(age)
             year.append(age)
             update_dict(value_added, 'year')
-        elif id_name == 'seats': # Note Also here check that number of seats & doors are first
-            # print(list[i].get_text()[0])
-            seats.append(list[i].get_text()[0])
-            update_dict(value_added, 'seats')
-        elif id_name == 'doors':
-            # print(list[i].get_text()[0])
-            doors.append((list[i].get_text()[0]))
-            update_dict(value_added, 'doors')
+        # elif id_name == 'seats': # Note Also here check that number of seats & doors are first
+        #     # print(list[i].get_text()[0])
+        #     seats.append(list[i].get_text()[0])
+        #     update_dict(value_added, 'seats')
+        # elif id_name == 'doors':
+        #     # print(list[i].get_text()[0])
+        #     doors.append((list[i].get_text()[0]))
+        #     update_dict(value_added, 'doors')
         #print((list[i]).get_text())
 
     if value_added['transmission'] == False:
@@ -117,10 +117,10 @@ for line in Lines:
         mileage.append('$')
     if value_added['year'] == False:
         year.append('$')
-    if value_added['seats'] == False:
-        seats.append('$')
-    if value_added['doors'] == False:
-        doors.append('$')
+    # if value_added['seats'] == False:
+    #     seats.append('$')
+    # if value_added['doors'] == False:
+    #     doors.append('$')
 
     # print(res)
     json_object = json.loads(res.contents[0])
@@ -134,16 +134,18 @@ for line in Lines:
     prices.append(json_object["offers"]["price"])
 
 
-rows = [brands, models, prices, transmission, colour, mileage, year, seats, doors]
+#rows = [brands, models, prices, transmission, colour, mileage, year, seats, doors]
+rows = [brands, models, prices, transmission, colour, mileage, year]#, seats, doors]
 rows = np.array(rows)
 
-d = {'Brands': brands, 'Models': models, 'Transmission': transmission, 'Colour': colour, 'Mileage': mileage, 'Year': year, 'Seats': seats, 'Doors': doors, 'Prices': prices }
+#d = {'Brands': brands, 'Models': models, 'Transmission': transmission, 'Colour': colour, 'Mileage': mileage, 'Year': year, 'Seats': seats, 'Doors': doors, 'Prices': prices }
+d = {'Brands': brands, 'Models': models, 'Transmission': transmission, 'Colour': colour, 'Mileage': mileage, 'Year': year, 'Prices': prices }
 car_df = pd.DataFrame(data=d)
 
 # Label Encoding
 car_df = labelEncode(['Colour', 'Models','Brands'], car_df)
 
-car_df.to_csv('car.csv')
+car_df.to_csv('car2.csv')
 
 #
 #     id_list = soup.find_all('li', class_='fpa-features__item')
