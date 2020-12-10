@@ -1,63 +1,14 @@
-import numpy as np
-import pandas as pd
 from sklearn.neighbors import KNeighborsRegressor
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-
-from sklearn.linear_model import LogisticRegression
 import numpy as np
-import pandas as pd
-from sklearn.preprocessing import PolynomialFeatures
 from sklearn.model_selection import KFold
-from sklearn import linear_model
 from sklearn.metrics import mean_squared_error
 import math
-import matplotlib.pyplot as plt
-from matplotlib import cm
+
+from reading import read, plotErrorBar
 
 def generate_gaussian_kernel_function(gamma):
     weights = lambda dists: np.exp(-gamma * (dists ** 2))
     return lambda dists: weights(dists) / np.sum(weights(dists))
-
-
-def read(filename):
-    df = pd.read_csv(filename, comment='#', header=None)
-    print(df.head())
-
-    X1 = normalise(df.iloc[:, 0]) # Brands
-    X2 = normalise(df.iloc[:, 1]) # model
-    X3 = normalise(df.iloc[:, 2]) # transmission
-    X4 = normalise(df.iloc[:, 3]) # Colour
-    X5 = normalise(df.iloc[:, 4]) # mileage
-    X6 = normalise(df.iloc[:, 5]) # year
-    X = np.column_stack((X1,X2,X3,X4,X5,X6))
-    y = normalise(df.iloc[:,6])
-
-    return (X, y)
-
-
-def normalise(arr) :
-    # Find the mean
-    m = np.mean(arr)
-    # Find standard deviation
-    s = np.amax(arr) - np.amin(arr) #np.std(arr)
-    # normalise data using z score
-    return (arr - m) / s
-
-def plotErrorBar(x, mean, var, xlabel, title, image):
-    # create an index for each tick position
-    xi = list(range(len(x)))
-    npc = np.array(xi)
-
-    fig, ax = plt.subplots()
-    plt.errorbar(npc, mean, var, linewidth=3, marker='o', c='b')
-
-    ax.set_title(title)
-    ax.set_xlabel(xlabel)
-    ax.set_ylabel('Mean')
-    plt.xticks(xi, x)
-    fig.show()
-    #fig.savefig(image)
 
 def crossValidationK(X, y, ks):
     newks = []
@@ -72,7 +23,7 @@ def crossValidationK(X, y, ks):
         mean = 0
         kf = KFold(n_splits=fold)
         for train, test in kf.split(X):
-            #   kNN
+            #  kNN
             model = KNeighborsRegressor(n_neighbors=k, weights=kernel).fit(X[train], y[train])
             ypred = model.predict(X[test])
 
