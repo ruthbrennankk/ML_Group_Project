@@ -18,7 +18,7 @@ def ridge(X, y, c):
     print(clf.intercept_)
     return clf, clf.coef_, clf.intercept_
 
-def crossValidationK(X, y, cs):
+def crossValidationC(X, y, cs):
     newcs = []
     yMeanValues = []
     yVarianceValues = []
@@ -62,7 +62,7 @@ def main():
     X = addFeatures(oldX)
 
     # Cross val for C
-    crossValidationK(X, y, [1, 3, 5, 10, 20])
+    crossValidationC(X, y, [0.01, 0.1, 1, 10, 50, 100, 1000])
 
 
 main()
