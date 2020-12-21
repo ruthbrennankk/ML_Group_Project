@@ -3,12 +3,13 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn import linear_model
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error
+import matplotlib.pyplot as plt
 import math
 
 from reading import read, plotErrorBar
 
-def addFeatures(X):
-    poly = PolynomialFeatures(5)
+def addFeatures(X, q):
+    poly = PolynomialFeatures(q)
     return poly.fit_transform(X)
 
 def ridge(X, y, c):
@@ -50,8 +51,31 @@ def crossValidationC(X, y, cs):
 
     npMeans = np.array(yMeanValues)
     npVar = np.array(yVarianceValues)
-    plotErrorBar(newcs, npMeans, npVar, 'c', 'C vs Mean - Ridge', 'errorbar_RC.png')
+    plotErrorBar(newcs, npMeans, npVar, 'c', 'C vs Mean - Ridge (q=6)', 'errorbar_RC.png')
 
+def crossValQ(oldX, y, qi_range):
+    fold = 5
+    mean_error = []
+    std_error = []
+    c = 10
+    for qi in qi_range:
+        temp = []
+        X = addFeatures(oldX, qi)
+        kf = KFold(n_splits=fold)
+        for train, test in kf.split(X):
+            #   Lasso
+            model = linear_model.Ridge(alpha=1 / (2 * c)).fit(X[train], y[train])
+            ypred = model.predict(X[test])
+
+            temp.append(mean_squared_error(y[test], ypred))
+        mean_error.append(np.array(temp).mean())
+        std_error.append(np.array(temp).std())
+    plt.errorbar(qi_range, mean_error, yerr=std_error)
+    plt.title("Cross Val Polynomial Features (C=%d)" % (c))
+    plt.xlabel('Q')
+    plt.ylabel('Mean Square Error')
+    #plt.savefig("errorbar_Ridge_q")
+    plt.show()
 
 
 def main():
@@ -59,10 +83,12 @@ def main():
     oldX,y = read('allKerryCars.csv')
 
     # equal to all combinations of powers of the two features up to power 5
-    X = addFeatures(oldX)
+    X = addFeatures(oldX,5)
 
     # Cross val for C
     crossValidationC(X, y, [0.01, 0.1, 1, 10, 50, 100, 1000])
 
+    #Cross val for polynomial features
+   # crossValQ(oldX, y, [1,2,3,4,5,6,7,8,9,10,11,12])
 
 main()
