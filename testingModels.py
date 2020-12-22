@@ -9,6 +9,7 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import r2_score
 
 import matplotlib.pyplot as plt
 
@@ -30,20 +31,28 @@ def MSE(name, model, Xtrain, Xtest, ytrain, ytest):
     mse_train = mean_squared_error(ytrain, ypred, squared=False)
     ypred = model.predict(Xtest)
     mse_test = mean_squared_error(ytest, ypred, squared=False)
-    print("The MSE for the %s model with the training data was %f and with the test data was %f" % (name, mse_train, mse_test))
+    print("The RMSE for the %s model with the training data was %f and with the test data was %f" % (name, mse_train, mse_test))
 
+def r_sq(name, model, Xtrain, Xtest, ytrain, ytest):
+    ypred = model.predict(Xtrain)
+    rsq_train = r2_score(ytrain, ypred)
+    ypred = model.predict(Xtest)
+    rsq_test = r2_score(ytest, ypred)
+    print("The R squared score for the %s model with the training data was %f and with the test data was %f" % (name, rsq_train, rsq_test))
 
 def lasso_regr(Xtrain, Xtest, ytrain, ytest):
     C = 5000
     model = Lasso(alpha=1 / (2 * C), max_iter=100000).fit(Xtrain, ytrain)
     MAE("lasso", model, Xtrain, Xtest, ytrain, ytest)
     MSE("lasso", model, Xtrain, Xtest, ytrain, ytest)
+    r_sq("lasso", model, Xtrain, Xtest, ytrain, ytest)
 
 def lin_regr(Xtrain, Xtest, ytrain, ytest):
     C = 0.1
     model = linear_model.Ridge(alpha=1 / (2 * C)).fit(Xtrain, ytrain)
     MAE("ridge", model, Xtrain, Xtest, ytrain, ytest)
     MSE("ridge", model, Xtrain, Xtest, ytrain, ytest)
+    r_sq("ridge", model, Xtrain, Xtest, ytrain, ytest)
 
 def kNN_regr(Xtrain, Xtest, ytrain, ytest):
     k=100
@@ -52,12 +61,14 @@ def kNN_regr(Xtrain, Xtest, ytrain, ytest):
     model = KNeighborsRegressor(n_neighbors=k, weights=kernel).fit(Xtrain, ytrain)
     MAE("kNN", model, Xtrain, Xtest, ytrain, ytest)
     MSE("kNN", model, Xtrain, Xtest, ytrain, ytest)
+    r_sq("ridge", model, Xtrain, Xtest, ytrain, ytest)
 
 def dummy_regr(Xtrain, Xtest, ytrain, ytest):
     strategy = "mean"
     model = DummyRegressor(strategy=strategy).fit(Xtrain, ytrain)
     MAE("dummy", model, Xtrain, Xtest, ytrain, ytest)
     MSE("dummy", model, Xtrain, Xtest, ytrain, ytest)
+    r_sq("dummy", model, Xtrain, Xtest, ytrain, ytest)
 
 def main():
     #Load data and hold back a test sample of size 0.2
