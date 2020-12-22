@@ -15,7 +15,7 @@ def crossValidationK(X, y, ks):
     yMeanValues = []
     yVarianceValues = []
     fold = 5
-    gamma = 1
+    gamma = 3
     kernel = generate_gaussian_kernel_function(gamma)
 
     for k in ks:
@@ -44,7 +44,7 @@ def crossValidationK(X, y, ks):
 
     npMeans = np.array(yMeanValues)
     npVar = np.array(yVarianceValues)
-    plotErrorBar(newks, npMeans, npVar, 'k', 'K vs Mean - kNN', 'errorbarK.png')
+    plotErrorBar(newks, npMeans, npVar, 'k', 'K vs Mean - kNN (gamma=3)', 'errorbarK.png')
 
 
 def crossValidationG(X, y, gammas):
@@ -52,7 +52,7 @@ def crossValidationG(X, y, gammas):
     yMeanValues = []
     yVarianceValues = []
     fold = 5
-    k = 500
+    k = 100
 
     for gamma in gammas:
         means = []
@@ -63,7 +63,7 @@ def crossValidationG(X, y, gammas):
             #  kNN
             model = KNeighborsRegressor(n_neighbors=k, weights=kernel).fit(X[train], y[train])
             ypred = model.predict(X[test])
-
+            #print(np.where(np.isnan(ypred)))
             tmp = mean_squared_error(y[test], ypred)
             means.append(tmp)
             mean += tmp
@@ -81,16 +81,16 @@ def crossValidationG(X, y, gammas):
 
     npMeans = np.array(yMeanValues)
     npVar = np.array(yVarianceValues)
-    plotErrorBar(newgs, npMeans, npVar, 'Gamma', 'Gamma vs Mean - kNN, k=500', 'errorbar_KNN_G_k=500.png')
+    plotErrorBar(newgs, npMeans, npVar, 'Gamma', 'Gamma vs Mean - kNN, k=100', 'errorbar_KNN_G_k=100.png')
 
 
 def main():
     #   Get Training Data
-    X, y = read('kerry_no_label.csv')
+    X, y = read('g_cars_final.csv')
 
     # Now you are all set to use these data to fit a KNN classifier.
     # Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.2)
-    crossValidationK(X, y, [1, 3, 5, 10, 20])
-    #crossValidationG(X, y, [0, 10, 25, 50, 100, 250, 500])
+    #crossValidationK(X, y, [1, 3, 5, 10, 20, 50, 100, 250, 500])
+    crossValidationG(X, y, [0, 1, 3, 4, 5, 10, 25, 50])
 
 main()

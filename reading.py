@@ -90,5 +90,5 @@ def plotErrorBar(x, mean, var, xlabel, title, image):
     ax.set_xlabel(xlabel)
     ax.set_ylabel('Mean')
     plt.xticks(xi, x)
-    fig.show()
-    #fig.savefig(image)
+    #fig.show()
+    fig.savefig(image)
