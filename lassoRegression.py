@@ -23,7 +23,7 @@ def crossValidationC(X, y, Ci_range):
         kf = KFold(n_splits=fold)
         for train, test in kf.split(X):
             #   Lasso
-            model = model = Lasso(alpha=1 / (2 * Ci)).fit(X[train], y[train])
+            model = Lasso(alpha=1 / (2 * Ci)).fit(X[train], y[train])
             ypred = model.predict(X[test])
 
             temp.append(mean_squared_error(y[test], ypred))

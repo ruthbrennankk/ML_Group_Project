@@ -3,6 +3,7 @@ from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error
 import math
 from sklearn.kernel_ridge import KernelRidge
+from sklearn import linear_model
 
 from reading import read, plotErrorBar
 
@@ -18,8 +19,7 @@ def crossValidationC(X, y, Cs):
         mean = 0
         kf = KFold(n_splits=fold)
         for train, test in kf.split(X):
-
-            model = KernelRidge(alpha=1 / (2 * C), kernel='rbf', gamma=gamma).fit(X[train], y[train])
+            model = linear_model.Lasso(alpha=1/C).fit(X[train], y[train])
             ypred = model.predict(X[test])
 
             tmp = mean_squared_error(y[test], ypred)
@@ -39,7 +39,7 @@ def crossValidationC(X, y, Cs):
 
     npMeans = np.array(yMeanValues)
     npVar = np.array(yVarianceValues)
-    plotErrorBar(newks, npMeans, npVar, 'C', 'C vs Mean - kRR', 'errorbar.png')
+    plotErrorBar(newks, npMeans, npVar, 'C', 'C vs Mean - Lasso', 'errorbar.png')
 
 
 def crossValidationG(X, y, gammas):

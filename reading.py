@@ -26,6 +26,7 @@ def encode_df(filename):
             #'Colour': og_df.iloc[:, 4],
             'Mileage': normalise(og_df.iloc[:, 5]),
             'Year': normalise(og_df.iloc[:, 6]),
+            'Price' : normalise(og_df.iloc[:,7])
         })
     print(df.head())
 
@@ -92,3 +93,24 @@ def plotErrorBar(x, mean, var, xlabel, title, image):
     plt.xticks(xi, x)
     fig.show()
     #fig.savefig(image)
+
+def read_df(filename):
+    # og_df = pd.read_csv('kerry_no_label.csv', comment='#')
+    og_df = pd.read_csv(filename, comment='#')
+    print(og_df.head())
+
+    # df now has two columns: name and country
+    df = pd.DataFrame({
+            'Brands': og_df.iloc[:, 1],
+            'Models': og_df.iloc[:, 2],
+            'Transmission': og_df.iloc[:, 3],
+            'Colour': og_df.iloc[:, 4],
+            'Mileage': (og_df.iloc[:, 5]),
+            'Year': (og_df.iloc[:, 6]),
+            'Price': (og_df.iloc[:, 7])
+        })
+    print(df.head())
+
+    X = df.iloc[:,:-1].to_numpy()
+    y = (df.iloc[:,-1:].to_numpy())
+    return (X, y)

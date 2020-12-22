@@ -1,13 +1,13 @@
 ,Brands,Models,Transmission,Colour,Mileage,Year,Prices
-1,Audi,A3,0,Manhattan Grey,5,-1,35995
+1,Audi,A3,0,Manhattan Grey,5,0,35995
 2,Citroen,Berlingo,0,Black,9000,0,12393
 3,Volkswagen,Passat,1,Black,46557,2,29500
-4,Audi,A6,1,Brilliant Black,5,-1,60147
+4,Audi,A6,1,Brilliant Black,5,0,60147
 5,Dacia,Sandero,0,Brown,12551,1,12950
 6,Hyundai,Tucson,0,White,38350,1,28950
 7,Lexus,CT200H,1,Assured Black,51345,2,26945
 #8,Volkswagen,T-Cross,0,Pure White,$,0,26945
-9,Audi,A6,1,Brilliant Black,5,-1,56099
+9,Audi,A6,1,Brilliant Black,5,0,56099
 10,Audi,A4,0,Black,61636,3,24950
 11,Opel,Astra,0,Black,47900,2,13950
 12,Nissan,Qashqai,0,Blue,24120,1,23495
@@ -15,13 +15,13 @@
 14,Ford,Focus,0,Grey,107823,4,12995
 15,Hyundai,Tucson,0,Blue,79937,4,18950
 16,Volkswagen,Tiguan,0,Brown,73439,4,23000
-17,Audi,Q3,1,Ibis White,4,-1,45839
+17,Audi,Q3,1,Ibis White,4,0,45839
 18,Kia,Sorento,0,Grey,109999,4,26995
 19,Nissan,Qashqai,0,Black,86902,4,15995
 20,Volkswagen,Polo,0,Orange,22531,2,16445
 21,Renault,Kadjar,0,Blue,25336,1,23450
-22,Audi,Q3,1,Navarra Blue,10,-1,52700
-23,Mercedes-Benz,CLA-Class,1,White,10,-1,50982
+22,Audi,Q3,1,Navarra Blue,10,0,52700
+23,Mercedes-Benz,CLA-Class,1,White,10,0,50982
 24,Toyota,C-HR,1,Silver,29389,3,23495
 25,Volkswagen,Passat,0,Brown,141272,7,10000
 26,Volkswagen,Tiguan,0,Green,193805,9,10500
@@ -36,10 +36,10 @@
 35,Peugeot,3008,0,Grey,101286,3,21995
 36,BMW,7 Series,1,Black,240339,8,15950
 37,Honda,Civic,0,Red,193222,4,99999
-38,Audi,A3,0,Tango Red,5,-1,37400
+38,Audi,A3,0,Tango Red,5,0,37400
 39,Vauxhall,Mokka,0,Velvet Red,60000,3,16500
 40,Volkswagen,Passat,0,Black,34739,3,23500
-41,Audi,A6,1,Brilliant Black,5,-1,61135
+41,Audi,A6,1,Brilliant Black,5,0,61135
 42,Mercedes-Benz,E-Class,1,Black,6962,0,57950
 43,Mazda,Mazda6,1,Blue,118284,4,16495
 44,Volkswagen,Passat,0,Blue,241719,6,11500
@@ -50,7 +50,7 @@
 49,Toyota,RAV4,1,Tokyo Red Pearl Metallic,11800,0,37975
 50,Kia,Sportage,0,Black,41969,2,24995
 51,Volkswagen,Jetta,0,Blue,46000,2,22000
-52,Audi,A3,0,Brilliant Black,5,-1,36648
+52,Audi,A3,0,Brilliant Black,5,0,36648
 53,Ford,Galaxy,1,Black,111100,3,22950
 54,Toyota,YARIS,0,Silver,73099,4,11750
 55,Renault,Megane,0,Blue,18396,1,18950
@@ -60,8 +60,8 @@
 59,SEAT,Leon,1,Black,142021,4,11950
 60,Lexus,CT200H,1,Grey,173804,9,11950
 61,Mercedes-Benz,E-Class,1,Black,104102,2,32900
-#62,Volvo,V60,1,Blue,$,-1,61714
-#63,Volvo,S60,1,Grey,$,-1,52831
+#62,Volvo,V60,1,Blue,$,0,61714
+#63,Volvo,S60,1,Grey,$,0,52831
 64,Ford,Kuga,0,Silver,35700,1,25950
 65,Volkswagen,Golf,1,Red,55086,4,17500
 66,Toyota,RAV4,0,Ash Grey Metallic,102900,5,17395
@@ -72,7 +72,7 @@
 71,BMW,4 Series,0,White/black Leather,97800,4,22950
 72,Ford,Focus,0,Silver,58500,3,13950
 73,Mercedes-Benz,CLS-Class,1,Grey,35501,2,36945
-#74,Volvo,XC60,1,White,$,-1,53362
+#74,Volvo,XC60,1,White,$,0,53362
 75,Audi,A3,0,Red,63122,3,19995
 76,Mercedes-Benz,C-Class,1,Grey,22001,0,38995
 77,Kia,Ceed,0,White,181608,7,7950
@@ -91,12 +91,12 @@
 90,Audi,A4,1,Blue,174448,3,18950
 91,Ford,Focus,0,Black,116003,3,13950
 92,Nissan,Qashqai,0,Black,46617,3,16995
-93,Audi,e-tron,1,Brilliant Black,2,-1,87115
+93,Audi,e-tron,1,Brilliant Black,2,0,87115
 94,Ford,Focus,0,Grey,307376,12,2450
 95,Volkswagen,Jetta,0,Black,170615,5,10450
 96,Jaguar,XF,1,Grey,55500,2,35950
 97,Volkswagen,Caddy,0,Silver,125000,5,10000
-98,Nissan,Juke,0,White,5,-1,21550
+98,Nissan,Juke,0,White,5,0,21550
 99,Mercedes-Benz,E-Class,1,Selenite Grey Metallic,4218,0,56895
 100,Mercedes-Benz,C-Class,1,Red,105892,3,24945
 101,Skoda,Citigo,0,Grey,32000,3,11500
@@ -108,7 +108,7 @@
 107,Volkswagen,Passat,0,Silver,42202,3,23000
 108,Volkswagen,Golf,0,Grey,298607,7,8500
 109,Lexus,RX450H,1,Sonic Titanium,58000,2,52945
-110,Audi,A5,1,Mythos Black Metallic,10,-1,60900
+110,Audi,A5,1,Mythos Black Metallic,10,0,60900
 111,Opel,ADAM,0,White,59704,3,9500
 112,Volkswagen,Passat,0,White,138400,4,16500
 113,Nissan,Qashqai,0,Blue,86902,3,18495
@@ -117,14 +117,14 @@
 116,Mercedes-Benz,E-Class,1,Brown,72152,4,26900
 117,Volkswagen,Tiguan,0,Grey,98176,4,18500
 118,Volkswagen,Golf,1,Black,128200,4,16450
-119,Audi,A7,1,Mythos Black,5,-1,87900
+119,Audi,A7,1,Mythos Black,5,0,87900
 120,Mazda,Mazda3,0,Red,7500,0,27995
 121,Volkswagen,Golf,0,Silver,83684,2,19495
-#122,Volvo,XC60,1,Grey,$,-1,73475
-123,Audi,A5,1,Ibis White,5,-1,53144
+#122,Volvo,XC60,1,Grey,$,0,73475
+123,Audi,A5,1,Ibis White,5,0,53144
 124,Volkswagen,Golf,0,Grey,20,0,33500
-125,Mercedes-Benz,A-Class,0,Black,30,-1,37800
-126,Audi,Q8,1,Daytona Grey,4,-1,209990
+125,Mercedes-Benz,A-Class,0,Black,30,0,37800
+126,Audi,Q8,1,Daytona Grey,4,0,209990
 127,Renault,Kadjar,0,Blue,22518,1,24450
 128,Mercedes-Benz,C-Class,1,Black,34000,1,38745
 129,Kia,Sportage,0,Silver,196920,8,11000
@@ -150,7 +150,7 @@
 149,Ford,Focus,0,White,94949,3,16495
 #150,Hyundai,Tucson,0,Grey,$,2,41000
 151,Volkswagen,Passat,0,Brown,238176,7,7425
-152,Audi,Q3,1,Glacier White,5,-1,47801
+152,Audi,Q3,1,Glacier White,5,0,47801
 153,Mazda,Mazda3,0,Grey,88907,7,8950
 154,Volkswagen,Jetta,0,Silver,99987,5,13500
 155,Volkswagen,Passat,0,Black,46000,1,31945
@@ -173,7 +173,7 @@
 172,Audi,A4,0,Black/black Leather,182656,2,20950
 173,Nissan,Qashqai,0,Grey,43000,1,23495
 174,Dacia,Duster,0,White,14,1,15400
-175,Audi,Q7,1,Night Black,10,-1,106505
+175,Audi,Q7,1,Night Black,10,0,106505
 176,Volkswagen,Passat,1,Silver,98006,3,18950
 #177,Volkswagen,T-Cross,0,Blue,$,0,26500
 178,Honda,Civic,0,Grey,86902,9,7950
@@ -188,8 +188,8 @@
 187,Renault,Megane,0,Grey,81391,3,14950
 188,Kia,Rio,0,Red,63307,6,9995
 189,Kia,Sportage,0,Black,146000,4,16850
-190,Audi,RS6,1,Nardo Grey,2,-1,193000
-191,Audi,A5,1,Navarra Blue Metallic,10,-1,59500
+190,Audi,RS6,1,Nardo Grey,2,0,193000
+191,Audi,A5,1,Navarra Blue Metallic,10,0,59500
 192,Audi,A3,0,Grey,93607,3,18500
 193,Hyundai,i30,0,Black,68810,2,17750
 194,Mercedes-Benz,C-Class,1,Cavansite Blue,32290,2,34950
@@ -201,7 +201,7 @@
 200,Renault,Megane,0,Red,89000,3,15950
 201,Mercedes-Benz,GLC-Class,1,Silver,69058,2,41995
 202,Toyota,Corolla,0,Ultra Silver,62811,3,16495
-203,Mercedes-Benz,E-Class,1,Cavansite Blue Metallic,12,-1,61830
+203,Mercedes-Benz,E-Class,1,Cavansite Blue Metallic,12,0,61830
 204,Volkswagen,Tiguan,0,Blue,76970,2,27450
 205,Volkswagen,Golf,0,Red,165758,5,11950
 206,Volvo,XC60,0,White/black Leather,171479,4,19950
@@ -242,7 +242,7 @@
 241,Nissan,Juke,0,Grey,107823,5,12950
 242,Volkswagen,Passat,1,Silver,205186,3,15950
 243,Volkswagen,T-Cross,0,White,17017,0,26500
-244,Mercedes-Benz,CLS-Class,1,Black,10,-1,83676
+244,Mercedes-Benz,CLS-Class,1,Black,10,0,83676
 245,Skoda,Octavia,0,Grey,151274,5,16495
 246,Volkswagen,Caddy Maxi Life,0,Grey,94949,7,16750
 247,Renault,Megane,0,Blue,16780,1,18450
@@ -254,7 +254,7 @@
 253,Nissan,Juke,1,Black,97174,3,14450
 254,Audi,A6,1,Black,5150,0,50950
 255,Audi,A4,0,Black,151280,4,16950
-256,Audi,Q3,1,Mythos Black,4,-1,47801
+256,Audi,Q3,1,Mythos Black,4,0,47801
 257,Toyota,Auris,1,Tokyo Red Pearl Metallic,43173,3,17695
 258,Honda,Civic,0,Blue,84327,2,17950
 259,Audi,A4,1,White,51739,3,25850
@@ -269,10 +269,10 @@
 268,Skoda,Superb,0,Brown,59544,2,23500
 269,Ford,Galaxy,0,Silver/black Leather,51015,1,35950
 270,Toyota,Corolla,1,Metal Stream Metallic,51473,1,25499
-271,Audi,A4,1,Mythos Black,5,-1,54480
+271,Audi,A4,1,Mythos Black,5,0,54480
 272,Skoda,Octavia,0,Silver,44999,3,16495
-273,Audi,A4,1,Navarra Blue,5,-1,48537
-#274,Volvo,XC60,1,Black,$,-1,55464
+273,Audi,A4,1,Navarra Blue,5,0,48537
+#274,Volvo,XC60,1,Black,$,0,55464
 275,Renault,Captur,0,Grey,75198,4,12995
 276,Volkswagen,Jetta,0,Black,105405,4,14000
 277,Ford,Focus,0,Blue,26056,2,17995
@@ -280,7 +280,7 @@
 279,Ford,Ranger,0,Silver,56326,2,25750
 280,Volkswagen,Touran,0,Indium Grey,24100,1,31945
 281,Skoda,Scala,0,Blue,16,0,25495
-282,Audi,A3,0,Ibis White,10,-1,36800
+282,Audi,A3,0,Ibis White,10,0,36800
 283,Vauxhall,Mokka,0,Black,91249,3,15495
 284,Skoda,Superb,0,White,143228,3,16950
 285,Skoda,Superb,0,Grey,104605,2,28000
@@ -289,8 +289,8 @@
 288,Nissan,Qashqai,1,Grey,60028,3,20995
 289,Nissan,Qashqai,0,Black,108999,4,15995
 290,Peugeot,Other,0,White,374428,9,9500
-291,Audi,A3,0,Atoll Blue,5,-1,35995
-292,Audi,A3,0,Navarra Blue,10,-1,37760
+291,Audi,A3,0,Atoll Blue,5,0,35995
+292,Audi,A3,0,Navarra Blue,10,0,37760
 293,Audi,A8,1,Phantom Black/cream Leather,114260,5,29950
 294,Audi,A5,0,White,58579,3,27750
 295,Vauxhall,Insignia,1,Black,73746,4,13950
@@ -299,7 +299,7 @@
 298,Lexus,RX450H,1,Sonic Titanium,27185,3,43945
 299,Volkswagen,Jetta,0,Grey,47918,3,16950
 300,Nissan,Juke,0,Grey,101223,4,13495
-301,Audi,A3,0,Floret Silver,10,-1,38997
+301,Audi,A3,0,Floret Silver,10,0,38997
 302,Opel,Astra,0,Grey,105265,3,13450
 303,Volkswagen,Tiguan,0,Brown,154224,6,12950
 304,Volkswagen,Golf,0,Red,30162,1,25000
@@ -312,7 +312,7 @@
 311,Volvo,S90,1,Grey,87185,1,31995
 312,Mercedes-Benz,C-Class,1,Black,123655,7,15995
 313,Mazda,Mazda6,1,Red,92000,4,16995
-314,Audi,Q3,1,Floret Silver,5,-1,46271
+314,Audi,Q3,1,Floret Silver,5,0,46271
 315,Audi,A4,0,Silver,77660,5,16950
 316,Nissan,Qashqai,1,Grey,65792,2,22995
 317,Volkswagen,Caddy,0,Grey,186006,6,8000
@@ -341,7 +341,7 @@
 340,Toyota,C-HR,1,Metal Stream,63810,2,23995
 341,Nissan,Qashqai,0,Brown,112000,5,13995
 342,Honda,Jazz,1,White,115000,5,13950
-343,Audi,Q3,1,Mythos Black,5,-1,47882
+343,Audi,Q3,1,Mythos Black,5,0,47882
 344,Skoda,Scala,0,Silver,16,0,23995
 345,Volkswagen,Golf,0,Black,105329,4,15500
 346,Volkswagen,Jetta,0,Grey,79164,4,15000
@@ -362,7 +362,7 @@
 361,Nissan,Juke,0,Red,95338,4,12995
 362,Volkswagen,Caddy,0,Grey,127753,2,13000
 363,Mazda,CX-5,0,Grey,173999,5,14495
-364,Audi,A5,1,Manhattan Grey,4,-1,52951
+364,Audi,A5,1,Manhattan Grey,4,0,52951
 365,Ford,Focus,0,Chill,94200,5,11950
 366,Dacia,Duster,0,White,81134,2,13950
 367,Mitsubishi,Outlander,0,White/black Leather,174287,6,14950
@@ -376,7 +376,7 @@
 375,Renault,Captur,0,Grey,67081,3,14950
 376,Hyundai,Tucson,1,Gold,34146,3,23495
 377,Renault,Grand Scenic,0,Blue,39037,2,23500
-378,Audi,A3,0,Daytona Grey,10,-1,43563
+378,Audi,A3,0,Daytona Grey,10,0,43563
 379,Mercedes-Benz,E-Class,1,Black,56523,2,34995
 380,Volkswagen,Touran,0,Blue,69089,2,25500
 381,Audi,A5,0,Black/black Leather,89799,3,27950
@@ -405,7 +405,7 @@
 404,Volvo,XC90,1,Grey,102351,5,38995
 405,Opel,Astra,0,Dark Moon Blue,46770,2,13950
 406,Mercedes-Benz,E-Class,1,Silver,160500,7,15950
-407,Audi,Q7,1,Navarra Blue,5,-1,110412
+407,Audi,Q7,1,Navarra Blue,5,0,110412
 408,Skoda,Octavia,1,Race Blue/black Leather,123755,4,18950
 409,Nissan,Juke,0,Grey,34999,2,17495
 410,Renault,Clio,0,White,39555,1,13950
@@ -418,7 +418,7 @@
 417,Renault,Captur,0,White,35355,1,17450
 418,Volkswagen,Golf SV,0,Grey,68477,5,14000
 419,Volkswagen,Passat,0,Blue,152906,4,15500
-420,Mercedes-Benz,A-Class,1,Black,5,-1,36800
+420,Mercedes-Benz,A-Class,1,Black,5,0,36800
 421,Skoda,Fabia,0,Grey,69000,5,9495
 422,Volkswagen,Tiguan,0,Blue,58000,2,28000
 423,Mitsubishi,ASX,0,Red,34700,5,13950
@@ -442,9 +442,9 @@
 441,Nissan,Micra,0,Blue,15000,1,14495
 442,Renault,Captur,0,Grey,28762,1,17450
 443,Toyota,Camry,1,Silver,152000,5,14950
-444,Audi,A6,1,Navarra Blue,5,-1,62262
+444,Audi,A6,1,Navarra Blue,5,0,62262
 445,Renault,Captur,0,Grey,36048,1,17450
-446,Audi,Q2,0,Brilliant Black,5,-1,34950
+446,Audi,Q2,0,Brilliant Black,5,0,34950
 447,Mitsubishi,ASX,0,Black,27041,3,17950
 448,Mercedes-Benz,C-Class,0,White,161413,3,19945
 449,Renault,Megane,0,Blue,8891,1,16950
@@ -462,7 +462,7 @@
 461,Hyundai,i20,0,Blue,167781,9,5950
 462,Volkswagen,Passat,0,Black,342947,9,5450
 463,Hyundai,Tucson,0,Beige,76002,4,18995
-#464,Volvo,XC60,1,Red,$,-1,56591
+#464,Volvo,XC60,1,Red,$,0,56591
 465,BMW,3 Series,1,Black,70005,3,21945
 466,SEAT,Ibiza,0,Black,47698,3,12495
 467,Opel,Astra,0,Grey,171069,6,8750
@@ -518,7 +518,7 @@
 517,Toyota,Corolla,0,White,62900,3,16995
 518,Volkswagen,Tiguan,0,Grey,27871,1,32945
 519,Skoda,Octavia,1,Blue,143999,7,9495
-520,Audi,e-tron,1,Brilliant Black,5,-1,96813
+520,Audi,e-tron,1,Brilliant Black,5,0,96813
 521,Kia,Sportage,0,Silver,90745,5,16995
 522,Skoda,Karoq,0,Grey,54999,2,23495
 523,Audi,A6,0,White,92884,4,23495
@@ -527,12 +527,12 @@
 526,Volvo,XC90,1,Denim Blue/black Leather,80143,3,45950
 527,Volkswagen,Caddy Maxi Life,1,Grey,41842,2,29500
 528,Skoda,Fabia,0,Red,67591,3,11500
-529,Audi,Q3,1,Chronos Grey,5,-1,47801
+529,Audi,Q3,1,Chronos Grey,5,0,47801
 530,Audi,A6,1,Black,68878,3,27450
-531,Audi,Q8,1,Navarra Blue,2,-1,119800
+531,Audi,Q8,1,Navarra Blue,2,0,119800
 532,Skoda,Octavia,0,Grey,16,0,24995
 533,Renault,Fluence,0,Blue,43774,3,11450
-#534,Volvo,S90,1,Black,$,-1,55948
+#534,Volvo,S90,1,Black,$,0,55948
 535,Volkswagen,Passat,0,Grey,20,0,37950
 536,Renault,Captur,0,Grey,39948,1,17450
 537,Ford,Galaxy,0,Blue,83684,3,24950
@@ -569,12 +569,12 @@
 568,Toyota,Avensis,0,Grey,83637,3,16950
 569,Renault,Captur,0,Red,89165,3,14450
 570,Volkswagen,Tiguan,0,White,78094,2,29950
-571,Mercedes-Benz,B-Class,1,Black,10,-1,40800
+571,Mercedes-Benz,B-Class,1,Black,10,0,40800
 572,BMW,6 Series,1,Grey,26553,1,48995
 573,Volkswagen,Passat,0,Silver,264757,6,10950
 574,Volkswagen,Passat,0,Grey,76171,2,26500
 575,Volvo,XC40,1,Blue,8999,1,43995
-576,Audi,A3,1,Navarra Blue,2,-1,40701
+576,Audi,A3,1,Navarra Blue,2,0,40701
 577,MINI,Hatch,0,Yellow,185570,11,5250
 578,Volkswagen,Golf,0,White,56875,2,21950
 579,Hyundai,Tucson,0,Grey (Metallic),127000,4,15500
@@ -601,13 +601,13 @@
 600,Volkswagen,Touran,0,White,33700,4,21495
 601,Mercedes-Benz,GLC-Class,1,Black,15952,0,55900
 602,SEAT,Arona,0,Black,60318,2,16995
-603,Audi,A3,0,Briliant Black,5,-1,37600
+603,Audi,A3,0,Briliant Black,5,0,37600
 604,Volkswagen,Passat,1,Pyrite Silver,25,0,37845
 605,Volkswagen,Caddy,0,Grey,114400,4,12800
 606,Chevrolet,Spark,0,Blue,119893,8,5500
 607,Honda,Civic,0,Black,122500,5,13750
 608,Toyota,Corolla,0,Silver,115000,5,13500
-609,Audi,A5,1,Brilliant Black,4,-1,51712
+609,Audi,A5,1,Brilliant Black,4,0,51712
 610,Mercedes-Benz,C-Class,1,Grey,93568,3,26900
 611,Audi,A4,0,Grey/black Leather,233670,7,12950
 612,Audi,A5,0,Black,217566,10,7945
@@ -628,16 +628,16 @@
 627,BMW,4 Series,0,Silver,72554,7,16995
 628,Volkswagen,Golf,0,Grey,233728,5,13500
 629,Renault,Grand Scenic,0,Red,28355,1,25450
-630,Audi,A1,0,Misano Red Metallic,5,-1,34187
+630,Audi,A1,0,Misano Red Metallic,5,0,34187
 631,Toyota,C-HR,1,Ash Grey Metallic,4000,0,28395
 632,Mitsubishi,ASX,0,Blue,37331,3,17950
 633,Mercedes-Benz,GLC-Class,1,Grey,63834,2,39900
-634,Audi,Q3,1,Ibis White,5,-1,50215
+634,Audi,Q3,1,Ibis White,5,0,50215
 635,Toyota,C-HR,0,Black,61244,2,19850
 636,Hyundai,i10,0,Red,20655,2,11950
 637,BMW,5 Series,1,Bluestone Metallic,6194,0,49750
 638,Citroen,Grand C4 Picasso,1,Silver,97996,5,13995
-639,Audi,Q2,0,Manhattan Grey,2,-1,35990
+639,Audi,Q2,0,Manhattan Grey,2,0,35990
 640,Suzuki,Ignis,1,Green,129000,5,11450
 641,Renault,Fluence,0,Gold,111075,4,9500
 642,Toyota,Prius,1,Silver,136000,5,12750
@@ -660,10 +660,10 @@
 659,Volkswagen,Tiguan,0,Gold,47933,2,28000
 660,Dacia,Duster,0,Brown,27760,1,18450
 661,Ford,Fiesta,0,Silver,81350,4,10750
-662,Audi,A1,0,Arrow Grey,5,-1,28343
+662,Audi,A1,0,Arrow Grey,5,0,28343
 663,Hyundai,Ioniq,1,Black,1000,0,34950
 664,BMW,4 Series,1,Black,199553,5,16945
-665,Mercedes-Benz,CLA-Class,1,Grey,10,-1,44300
+665,Mercedes-Benz,CLA-Class,1,Grey,10,0,44300
 666,Mercedes-Benz,E-Class,1,Silver,68749,4,26995
 667,Renault,Kadjar,0,Blue,29770,1,23450
 668,Toyota,Avensis,0,Silver,201031,7,7950
@@ -671,7 +671,7 @@
 670,Ford,Focus,0,Red,75637,3,16495
 671,Renault,Megane,0,Blue,14,1,17950
 672,Skoda,Superb,0,Grey,52999,2,22495
-673,Audi,Q2,0,Floret Silver,10,-1,37955
+673,Audi,Q2,0,Floret Silver,10,0,37955
 674,Volkswagen,Tiguan,0,Black,133732,3,23000
 675,Volkswagen,Golf,0,Blue,175080,7,10950
 676,Volkswagen,Golf,0,Black,114260,3,16995
@@ -682,7 +682,7 @@
 681,Volkswagen,Tiguan,0,Brown,119088,6,12995
 682,Skoda,Superb,0,Grey,140300,3,15950
 683,SEAT,Arona,0,Black,25507,2,17995
-684,Audi,A4,1,Daytona Grey,10,-1,54480
+684,Audi,A4,1,Daytona Grey,10,0,54480
 685,Volkswagen,Golf,0,Blue,205585,7,10500
 686,Mercedes-Benz,E-Class,1,Silver,71775,3,26995
 687,Hyundai,Santa Fe,0,White,63000,2,29950
@@ -695,12 +695,12 @@
 694,Volkswagen,Caddy,0,Red,110142,5,10000
 695,Volkswagen,Tiguan,0,Black,93339,3,24995
 696,Renault,Captur,0,Black,21107,1,16450
-697,Volkswagen,Passat,1,Red,2,-1,42500
+697,Volkswagen,Passat,1,Red,2,0,42500
 698,Volkswagen,Jetta,0,Silver,81600,4,14500
 699,Lexus,IS250,1,Black,192000,12,4950
 700,Kia,Sportage,0,Blue,71794,2,24995
 701,Renault,Megane,0,Red,10480,1,16950
-702,Mercedes-Benz,E-Class,1,Graphite Grey Metallic,8,-1,59250
+702,Mercedes-Benz,E-Class,1,Graphite Grey Metallic,8,0,59250
 703,Renault,Kadjar,0,Red,75637,4,16950
 704,Toyota,Avensis,0,Platinum Bronze Metallic,95690,3,16499
 705,Skoda,Octavia,0,Silver,99398,3,14995
@@ -734,7 +734,7 @@
 733,Audi,A6,0,Grey,341596,8,8950
 734,Audi,A6,1,Grey,73384,3,26950
 735,Volkswagen,Passat,0,Deep Pearl Black,10000,0,39945
-736,Audi,A6,1,Firmament Blue,10,-1,63995
+736,Audi,A6,1,Firmament Blue,10,0,63995
 737,Toyota,Auris,0,White,63950,2,16995
 738,Audi,Q7,1,Moonlight Blue,147200,4,43950
 739,Volkswagen,Tiguan,1,Grey,47480,3,28500
@@ -761,7 +761,7 @@
 760,Volkswagen,Jetta,0,Grey,103843,4,15950
 #761,Kia,XCeed,0,Grey,$,0,23995
 762,Volkswagen,up!,0,White,47021,2,10500
-763,Audi,A3,1,Daytona Grey,2,-1,43906
+763,Audi,A3,1,Daytona Grey,2,0,43906
 764,Nissan,Qashqai,0,Bronze,68345,3,17950
 765,Toyota,Corolla,0,Ash Grey,142125,3,15995
 766,Ford,Focus,0,Grey,202772,3,12950
@@ -814,7 +814,7 @@
 813,Toyota,C-HR,0,Grey,59000,3,20950
 814,Toyota,YARIS,0,Grey,69369,8,7450
 815,Toyota,Corolla,0,Black,144926,5,10995
-816,Audi,A3,0,Manhattan Grey,4,-1,38707
+816,Audi,A3,0,Manhattan Grey,4,0,38707
 817,Volkswagen,Jetta,0,Grey,86233,4,15000
 818,Volkswagen,Passat,0,Silver,159000,4,15000
 819,Volkswagen,Golf,0,Grey,127200,7,11950
@@ -843,15 +843,15 @@
 842,Skoda,Kodiaq,1,Black,41924,1,36995
 843,Honda,Civic,0,Blue,147190,4,12950
 844,Ford,Mondeo,0,Grey,135149,3,15950
-845,Audi,A4,0,Brilliant Black,10,-1,42718
+845,Audi,A4,0,Brilliant Black,10,0,42718
 846,Audi,Q3,0,Silver,106214,4,20450
 847,Renault,Captur,0,White,12010,1,17450
 848,Opel,Astra,1,Red,65330,3,14995
 849,Kia,Niro,1,Grey,19563,1,26995
 850,Audi,A3,0,Black,130353,4,19450
-#851,Mercedes-Benz,E-Class,1,Selenite Grey Metallic,$,-1,64196
+#851,Mercedes-Benz,E-Class,1,Selenite Grey Metallic,$,0,64196
 852,Dacia,Sandero,0,White,25,0,12100
-853,Audi,Q2,0,Ibis White,5,-1,36950
+853,Audi,Q2,0,Ibis White,5,0,36950
 854,Mercedes-Benz,CLS-Class,1,Grey,126250,4,25950
 855,Nissan,Qashqai,0,Blue,39304,1,23495
 856,Skoda,Yeti,0,Black,72380,3,17950
@@ -864,7 +864,7 @@
 863,Toyota,Auris,0,Denim Blue Metallic,54778,3,16899
 864,Volkswagen,Golf,1,Silver,61153,7,13950
 865,Nissan,Qashqai,1,White,67000,2,22995
-866,Mercedes-Benz,A-Class,0,White,10,-1,38130
+866,Mercedes-Benz,A-Class,0,White,10,0,38130
 867,Peugeot,Expert,0,Silver,3,8,6750
 868,Volkswagen,Tiguan,0,Silver,180329,4,16450
 869,Audi,A4,0,Black,84500,3,22950
@@ -904,7 +904,7 @@
 903,Kia,Sportage,0,Black,128973,8,12000
 904,Volkswagen,Touran,0,Brown,138926,4,21000
 905,Renault,Grand Scenic,0,White,25143,1,25450
-906,Audi,A6,1,Vesuvius Grey,2,-1,65667
+906,Audi,A6,1,Vesuvius Grey,2,0,65667
 907,Toyota,Corolla,1,Ultra Silver Metallic,28232,1,23845
 908,Audi,A4,0,Moonlight Blue,121502,4,17950
 909,Nissan,Qashqai,0,Red,95427,3,17950
@@ -921,7 +921,7 @@
 920,Renault,Clio,0,Red,100,0,17850
 921,BMW,2 Series,1,Grey,63451,1,28500
 922,Jaguar,XE,0,Black,11100,1,37950
-923,Audi,Q3,1,Chronos Grey,5,-1,47229
+923,Audi,Q3,1,Chronos Grey,5,0,47229
 924,Volkswagen,Passat,0,Blue,99455,3,20500
 925,Volkswagen,Polo,0,Reef Blue,5000,0,19945
 926,Lexus,LS 500h,1,Deep Blue,15350,1,95945
@@ -930,7 +930,7 @@
 929,SEAT,Arona,0,Red,19,0,21495
 930,Hyundai,Ioniq,1,White,44256,1,22995
 931,Toyota,C-HR,1,Blue,120698,3,19950
-932,Audi,Q3,1,Floret Silver,5,-1,47440
+932,Audi,Q3,1,Floret Silver,5,0,47440
 933,Toyota,Corolla,0,Bronze,110500,4,13950
 934,BMW,5 Series,1,Blue,35421,1,37945
 935,Nissan,Micra,0,Red,22182,1,14495
@@ -942,15 +942,15 @@
 941,Volkswagen,Jetta,0,Silver,155637,5,12500
 942,Kia,Sportage,0,White,136589,5,15500
 943,Hyundai,i10,0,Red,2,0,15750
-944,Audi,A4,1,Floret Silver,5,-1,48537
+944,Audi,A4,1,Floret Silver,5,0,48537
 945,Volvo,XC90,1,Silver,103500,5,37500
-946,Mercedes-Benz,V-Class,1,Black,44,-1,77900
+946,Mercedes-Benz,V-Class,1,Black,44,0,77900
 947,Toyota,YARIS,1,Island Blue Metallic,52876,3,15399
 948,Skoda,Fabia,0,Avantgarde Bronze Metallic,48221,4,10499
 949,Volkswagen,Polo,0,Black,92002,5,12500
 950,Volkswagen,Jetta,0,Grey,116835,3,16945
 951,Citroen,Grand C4 Picasso,0,White,72419,5,14950
-952,Audi,A6,1,Brilliant Black,2,-1,56527
+952,Audi,A6,1,Brilliant Black,2,0,56527
 953,Audi,A6,1,Black/black Leather,120376,3,24950
 954,BMW,5 Series,1,Black,62103,2,32945
 955,Volkswagen,Tiguan,0,Blue,108739,2,29500
@@ -1000,7 +1000,7 @@
 999,Hyundai,i40,0,Black,210657,6,10950
 1000,Renault,Captur,0,Red,36769,1,17950
 1001,Volkswagen,Tiguan,0,Silver,180329,4,16450
-1002,Audi,A1,0,Firmament Blue,2,-1,29625
+1002,Audi,A1,0,Firmament Blue,2,0,29625
 1003,Skoda,Superb,0,Silver,70999,2,23495
 1004,Mercedes-Benz,E-Class,1,Black,113617,3,28900
 1005,Volkswagen,Caddy,0,White,196716,6,7450
@@ -1017,7 +1017,7 @@
 1016,Opel,Insignia,0,Silver,170586,7,6850
 1017,Volkswagen,Passat,0,Blue,140449,3,18500
 1018,Renault,Kadjar,0,Blue,27344,1,23450
-1019,Audi,Q5,1,Floret Silver,4,-1,65900
+1019,Audi,Q5,1,Floret Silver,4,0,65900
 1020,Toyota,YARIS,1,Ultra Silver Bitone,11601,0,21495
 1021,Renault,Megane,0,Blue,6663,0,20950
 1022,Skoda,Superb,0,Blue,9999,0,38495
@@ -1025,13 +1025,13 @@
 1024,Kia,Sportage,0,Beige,145000,4,16995
 1025,Volkswagen,Golf,0,White,122307,5,13995
 1026,Skoda,Citigo,0,Red,115625,5,6950
-1027,Audi,A1,1,Firmanent Blue,5,-1,32900
+1027,Audi,A1,1,Firmanent Blue,5,0,32900
 1028,Toyota,Corolla,0,Red,115000,4,13950
 1029,Volkswagen,Polo,0,Black,78965,3,13000
 1030,Audi,A5,0,Moonlight Blue,168977,3,24950
 1031,Toyota,Camry,1,Silver,127000,5,14950
 1032,Nissan,Micra,0,Blue,36823,1,13995
-1033,Audi,RS7,1,Mythos Black,5,-1,198790
+1033,Audi,RS7,1,Mythos Black,5,0,198790
 1034,Volkswagen,Passat,0,Silver,75911,3,21500
 1035,Ford,Ranger,0,Black,107590,6,19995
 1036,Volkswagen,Passat,0,Black,155142,6,13500
@@ -1040,7 +1040,7 @@
 1039,Skoda,Kodiaq,1,Blue,93499,3,32495
 1040,Toyota,YARIS,0,Grey,60228,2,13250
 1041,Toyota,Verso S,0,Silver,133865,9,6450
-1042,Audi,A1,0,Glacier White,4,-1,36301
+1042,Audi,A1,0,Glacier White,4,0,36301
 1043,Volkswagen,Tiguan,0,Grey,136144,8,12000
 1044,Nissan,Micra,0,White,25519,1,14495
 1045,Volkswagen,Golf,0,Grey,73710,5,16945
@@ -1076,7 +1076,7 @@
 1075,Toyota,Auris,0,Bronze,82958,4,14950
 1076,Toyota,YARIS,1,Platnium Bronze,45408,3,14995
 1077,Nissan,Qashqai,0,Grey,103699,4,15950
-#1078,Volkswagen,Caddy,0,Candy White,$,-1,14700
+#1078,Volkswagen,Caddy,0,Candy White,$,0,14700
 1079,Peugeot,Partner,0,Blue,77246,4,14950
 1080,Volkswagen,Jetta,0,Black,65624,3,17945
 1081,Volvo,XC60,0,Blue,109432,4,21950
@@ -1103,7 +1103,7 @@
 1102,Hyundai,i20,0,Red,2,1,16995
 1103,Volkswagen,Polo,0,White,24476,2,15450
 1104,BMW,3 Series,1,Blue,18900,2,26995
-1105,Audi,A3,0,Floret Silver Metallic,5,-1,35995
+1105,Audi,A3,0,Floret Silver Metallic,5,0,35995
 1106,BMW,M4,1,Grey,71614,3,56945
 1107,Toyota,Prius,1,Emotional Red Pearl Finish,38503,2,23999
 1108,Volkswagen,Golf,1,Grey,27979,2,24945
@@ -1112,7 +1112,7 @@
 1111,Skoda,Octavia,0,White,56326,2,18500
 1112,Toyota,Corolla,1,Night Sky Black Metallic,5540,0,25895
 1113,Mercedes-Benz,R-Class,1,Silver,234009,12,6950
-1114,Audi,Q2,0,Manhattan Grey,10,-1,37955
+1114,Audi,Q2,0,Manhattan Grey,10,0,37955
 1115,Volkswagen,Beetle,0,Red,99894,6,13500
 #1116,Nissan,Qashqai,0,Black,$,5,13995
 1117,Volkswagen,Jetta,0,Blue,87548,3,16500
@@ -1123,9 +1123,9 @@
 1122,Audi,A4,0,Grey,57999,5,16450
 1123,Opel,Astra,0,Grey,51150,2,13950
 1124,Volkswagen,Golf,1,Grey,8000,2,25500
-1125,Audi,A3,0,Atoll Blue,5,-1,38570
+1125,Audi,A3,0,Atoll Blue,5,0,38570
 1126,Ford,Focus,0,Blue,54716,4,14450
-1127,Audi,A3,0,Ibis White,10,-1,42605
+1127,Audi,A3,0,Ibis White,10,0,42605
 1128,Nissan,Micra,0,Black,16267,1,14495
 1129,Nissan,Qashqai,0,Grey,34505,2,21495
 1130,Mercedes-Benz,E-Class,1,Blue,162490,6,15950
@@ -1143,7 +1143,6 @@
 1142,Dacia,Sandero,0,Blue,24953,1,12950
 1143,Kia,Rio,0,Brown,134676,6,8250
 1144,SEAT,Arona,0,Urban Silver,30100,1,18950
-1145,Toyota,Corolla,1,White,120698,31,3450
 1146,Mercedes-Benz,CLS-Class,1,Grey,85509,3,31895
 1147,Toyota,AYGO,0,Red Pop,39507,1,11495
 1148,Volkswagen,Passat,0,Silver,146446,4,17950
@@ -1166,7 +1165,7 @@
 1165,Skoda,Octavia,0,Blue,9656,0,23500
 1166,Nissan,X-Trail,0,Black,69200,3,24950
 1167,Renault,Megane,0,Blue,23189,1,17950
-1168,Audi,Q3,1,Mythos Black,5,-1,46819
+1168,Audi,Q3,1,Mythos Black,5,0,46819
 1169,Audi,A6,1,Black,124640,4,21995
 1170,Audi,A4,0,Black,143871,3,19950
 1171,Ford,Focus,0,Blue,104605,5,11250
@@ -1200,13 +1199,13 @@
 1199,Volkswagen,Golf,1,Black,23996,2,24995
 1200,Citroen,Grand C4 Picasso,0,Red,112638,6,10750
 1201,Toyota,Auris,1,Grey,18250,3,17950
-1202,Audi,A6,1,Brilliant Black,5,-1,57636
+1202,Audi,A6,1,Brilliant Black,5,0,57636
 1203,Volkswagen,Passat,1,Deep Black,100,0,37845
 1204,Opel,Astra,0,White,11828,2,17500
-1205,Audi,A3,1,Brilliant Black,2,-1,39818
+1205,Audi,A3,1,Brilliant Black,2,0,39818
 1206,Volkswagen,Passat,0,Blue,105765,3,20500
 1207,Volkswagen,Passat,0,Brown,71568,2,26950
-1208,Audi,Q3,1,Navarra Blue,5,-1,47801
+1208,Audi,Q3,1,Navarra Blue,5,0,47801
 1209,Mercedes-Benz,E-Class,1,Silver,96325,4,21950
 1210,Toyota,Camry,1,White,132999,6,13950
 1211,Hyundai,ix35,0,Silver,103500,6,8100
@@ -1227,7 +1226,7 @@
 1226,Mercedes-Benz,E-Class,1,Blue,40962,2,34900
 1227,Volkswagen,Passat,0,Black,100300,3,20500
 1228,Audi,A6,0,Grey,163120,9,10995
-1229,Audi,Q3,1,Nardo Grey,5,-1,99320
+1229,Audi,Q3,1,Nardo Grey,5,0,99320
 1230,Renault,Clio,0,Blue,28996,1,15950
 1231,Toyota,C-HR,1,Ash Grey,47207,3,21995
 1232,Volkswagen,Touran,0,Beige,72845,3,22495
@@ -1261,13 +1260,13 @@
 1260,Toyota,Corolla,0,Ultra Silver,39206,2,16495
 1261,Ford,Focus,0,Blue,91730,3,14750
 1262,Audi,Q3,0,Black,63970,3,26450
-1263,Audi,A3,0,Navarra Blue,10,-1,42418
+1263,Audi,A3,0,Navarra Blue,10,0,42418
 1264,Citroen,Grand C4 Picasso,0,Red,37014,4,17950
-1265,Mercedes-Benz,CLA-Class,1,Mountain Grey Metallic,18,-1,43650
+1265,Mercedes-Benz,CLA-Class,1,Mountain Grey Metallic,18,0,43650
 1266,Volkswagen,Tiguan Allspace,0,Black,20,0,43500
 1267,Volkswagen,Caddy,0,Silver,73605,4,12000
 1268,Toyota,C-HR,1,Metal Stream Metallic,48700,1,27999
-1269,Audi,A3,0,Navarra Blue,10,-1,42418
+1269,Audi,A3,0,Navarra Blue,10,0,42418
 1270,Honda,CR-V,0,Red,164565,4,16950
 1271,Toyota,C-HR,0,Night Sky Black,106420,3,17495
 1272,Mercedes-Benz,C-Class,1,Grey,89006,3,24900
@@ -1305,9 +1304,9 @@
 1304,Ford,Mondeo,0,Grey,96503,3,17950
 1305,Nissan,Qashqai,0,Black,149900,5,8000
 1306,BMW,3 Series,0,Black,195691,10,6750
-1307,Mercedes-Benz,A-Class,0,Denim Blue Metallic,7,-1,37780
+1307,Mercedes-Benz,A-Class,0,Denim Blue Metallic,7,0,37780
 1308,Volvo,V40,1,White,36343,2,23995
-1309,Mercedes-Benz,A-Class,1,Blue,10,-1,43984
+1309,Mercedes-Benz,A-Class,1,Blue,10,0,43984
 1310,Toyota,Aqua,1,Silver,148000,3,13950
 1311,Kia,Venga,0,Silver,67546,8,6995
 1312,Land Rover,Range Rover,1,Black,154943,5,54995
@@ -1320,15 +1319,15 @@
 1319,Toyota,Auris,1,Night Sky Black Metallic,20542,1,22499
 1320,Renault,Captur,0,Silver,52759,2,15250
 1321,Volkswagen,Golf,0,Red,66834,4,16500
-1322,Audi,A6,1,Vesuvius Grey,10,-1,69900
-1323,Audi,A4,1,Ibis White,5,-1,47284
+1322,Audi,A6,1,Vesuvius Grey,10,0,69900
+1323,Audi,A4,1,Ibis White,5,0,47284
 1324,Volkswagen,Tiguan,0,Grey,73139,3,24500
 1325,Volkswagen,Passat,1,Blue,86212,2,22000
 1326,Renault,Kadjar,0,Black,22200,1,24450
 1327,Renault,Megane,1,Silver,71886,2,16750
 1328,Mercedes-Benz,E-Class,1,Grey,123604,4,23995
 1329,Suzuki,SX4,0,Green,72097,4,13950
-1330,Audi,A4,1,Brilliant Black,2,-1,46796
+1330,Audi,A4,1,Brilliant Black,2,0,46796
 1331,Toyota,Prius+,1,Premium Dark Blue,20803,1,32495
 1332,Skoda,Superb,1,Business Grey,85400,2,19500
 1333,Skoda,Fabia,0,Red,2500,4,12500
@@ -1354,7 +1353,7 @@
 1353,Citroen,Grand C4 Picasso,0,Silver,127135,4,15750
 1354,Hyundai,Santa Fe,0,Black,76400,3,26500
 1355,Volkswagen,Tiguan,0,Silver,175805,11,8950
-1356,Audi,A4,1,Manhattan Grey,5,-1,48537
+1356,Audi,A4,1,Manhattan Grey,5,0,48537
 1357,Renault,Megane,0,White,148056,4,11850
 1358,Skoda,Superb,0,Black,72972,2,27450
 1359,Ford,Focus,0,Grey,74028,3,14995
@@ -1370,7 +1369,7 @@
 1369,Ford,Kuga,0,Blue,48279,3,20450
 #1370,Volvo,XC60,1,Blue,$,0,54995
 1371,Volvo,XC90,1,Osmuim Grey,50371,1,65950
-#1372,Volvo,XC60,1,Blue,$,-1,56591
+#1372,Volvo,XC60,1,Blue,$,0,56591
 1373,Mercedes-Benz,S-Class,1,Indium Silver Metallic,27680,2,64945
 1374,Audi,A4,0,Silver,147999,6,14995
 1375,Volkswagen,Jetta,0,Silver,86902,5,13450
@@ -1407,21 +1406,21 @@
 1406,Opel,Insignia,0,Darkmoon Blue,13784,0,32500
 1407,Hyundai,Santa Fe,0,White,94788,4,24950
 1408,Volkswagen,up!,0,White,111364,4,7950
-#1409,Volvo,S90,1,Grey,$,-1,56658
+#1409,Volvo,S90,1,Grey,$,0,56658
 1410,SEAT,Arona,1,Grey,16,0,22495
 1411,Skoda,Octavia,0,Grey,71500,3,16995
 1412,Audi,A5,0,Black/black Leather,217000,8,11950
 1413,Hyundai,Tucson,0,Blue,65655,3,20950
 1414,Volkswagen,Jetta,0,Black,125006,4,13500
 1415,Peugeot,2008,0,Grey,44500,2,14450
-1416,Audi,A4,1,Manhattan Grey,2,-1,47990
+1416,Audi,A4,1,Manhattan Grey,2,0,47990
 1417,Nissan,Qashqai,0,Grey,37027,2,20995
 1418,Toyota,Auris,0,Ultra Silver,49108,2,18995
 1419,Volkswagen,Golf,0,Silver,70806,2,22945
 1420,Ford,Focus,0,Silver,56000,4,14500
 1421,Toyota,Corolla,1,Ultra Silver Metallic,17000,0,27999
 1422,Renault,Kadjar,1,Grey,67909,3,19250
-1423,Mercedes-Benz,E-Class,1,Emerald Green,10,-1,68528
+1423,Mercedes-Benz,E-Class,1,Emerald Green,10,0,68528
 1424,Ford,Focus,0,Silver,201163,12,2500
 1425,Skoda,Fabia,0,Grey,53912,3,10250
 1426,Mazda,CX-5,0,Red,179999,5,14995
@@ -1430,7 +1429,7 @@
 1429,Ford,S-Max,0,Grey,35405,3,24450
 1430,Volkswagen,Tiguan,0,Tungsten Silver,12586,0,37945
 1431,Volkswagen,Golf,0,Grey,34096,1,19950
-1432,Audi,Q2,0,Navarra Blue,5,-1,37955
+1432,Audi,Q2,0,Navarra Blue,5,0,37955
 1433,Skoda,Kodiaq,1,White,210200,3,25950
 1434,Mercedes-Benz,GLC-Class,1,Grey,1704,0,66900
 1435,Skoda,Octavia,0,Blue,102995,4,19750
@@ -1438,7 +1437,7 @@
 1437,Volkswagen,Passat,0,Red,112651,3,20950
 1438,Volkswagen,Tiguan,0,Black,60943,3,25950
 1439,Ford,Focus,0,Blue,100237,3,14950
-1440,Audi,Q3,1,Chronos Grey,5,-1,45885
+1440,Audi,Q3,1,Chronos Grey,5,0,45885
 #1441,Kia,XCeed,0,Blue,$,0,25995
 1442,Hyundai,Tucson,0,Grey,61000,3,20995
 1443,Audi,A4,0,Silver,88512,3,21950
@@ -1450,7 +1449,7 @@
 1449,Citroen,C4 Cactus,0,Grey,32999,1,17995
 1450,Nissan,Qashqai,0,Black,23979,3,17450
 1451,Toyota,Avensis,0,Blue,198330,4,10850
-1452,Audi,Q2,0,Ibis White,5,-1,34990
+1452,Audi,Q2,0,Ibis White,5,0,34990
 1453,Volkswagen,Passat,0,Red,99313,3,19500
 1454,Ford,Transit Tourneo,0,White,90121,15,6450
 1455,Mercedes-Benz,A-Class,0,Blue,112007,6,16000
@@ -1463,7 +1462,7 @@
 1462,Volkswagen,Tiguan,1,Red,65981,2,36500
 1463,Renault,Captur,0,Blue,24033,1,17450
 1464,Vauxhall,Astra,0,Grey,112500,4,10900
-1465,Audi,Q5,1,Daytona Grey,5,-1,66063
+1465,Audi,Q5,1,Daytona Grey,5,0,66063
 1466,Opel,Astra,1,Black,12095,2,18500
 1467,Ford,Galaxy,0,Silver,227457,7,13500
 1468,Volkswagen,Golf,0,Red,65441,3,17500
@@ -1477,20 +1476,20 @@
 1476,Ford,Focus,0,Silver,33500,5,13500
 1477,Renault,Megane,0,Gold,171386,7,6750
 1478,Ford,Kuga,0,Black,69200,4,17450
-1479,Audi,A6,1,Vesuvius Grey,10,-1,76053
+1479,Audi,A6,1,Vesuvius Grey,10,0,76053
 1480,Nissan,Qashqai,0,Brown,109820,5,14995
 1481,Volkswagen,Tiguan,0,Black,208800,10,8500
 1482,Toyota,Auris,1,Avantgarde Bronze Metallic,34202,4,16899
 1483,Nissan,Qashqai,1,Brown,44925,2,22995
 1484,Renault,Kadjar,0,Grey,14765,1,25450
-1485,Audi,A3,0,Navarra Blue,5,-1,38570
+1485,Audi,A3,0,Navarra Blue,5,0,38570
 1486,Mercedes-Benz,E-Class,1,Black,145371,4,21995
 1487,Mercedes-Benz,C-Class,1,Grey,73285,2,27900
 1488,Volkswagen,Tiguan,0,Grey,113569,5,15950
 1489,Volkswagen,Golf,0,Blue,182265,4,13950
 1490,Daihatsu,Terios,0,Silver,195992,15,2500
 1491,Skoda,Kodiaq,0,Blue,143228,3,29495
-1492,Nissan,Leaf,1,White,5,-1,25595
+1492,Nissan,Leaf,1,White,5,0,25595
 1493,Mazda,CX-5,1,Blue,61000,5,18950
 1494,Volkswagen,Arteon,1,Grey,71700,1,38500
 1495,Mercedes-Benz,E-Class,1,Black,187233,4,22900
@@ -1521,7 +1520,7 @@
 1520,Skoda,Superb,1,Brown,195208,4,13950
 1521,Volkswagen,Sharan,1,Silver,11758,0,39945
 1522,Volkswagen,Golf,0,Blue,46044,3,18500
-1523,Audi,Q3,1,Navarra Blue,5,-1,47900
+1523,Audi,Q3,1,Navarra Blue,5,0,47900
 1524,Volkswagen,Golf,1,Black,135382,6,13500
 1525,Toyota,RAV4,1,Silver Metallic,10002,0,36495
 1526,Volkswagen,Golf,0,Grey,126475,6,12500
@@ -1539,14 +1538,14 @@
 1538,Lexus,CT200H,1,Dark Blue,5,0,35945
 1539,Toyota,Avensis,0,Black,172482,4,14250
 1540,Renault,Megane,0,Blue,28302,1,17950
-1541,Audi,Q7,1,Daytona Grey,5,-1,108384
+1541,Audi,Q7,1,Daytona Grey,5,0,108384
 1542,Mercedes-Benz,E-Class,1,White,55360,3,35950
 1543,Volkswagen,Tiguan,0,Atlantic Blue,84000,2,26945
 1544,Renault,Captur,0,Red,15871,1,17450
 1545,Nissan,Qashqai,0,Black,98167,4,16950
 1546,Volkswagen,Jetta,0,Blue,82141,3,16000
 1547,Volkswagen,Jetta,0,Silver,134000,4,13000
-1548,Audi,Q3,1,Ibis White,5,-1,52057
+1548,Audi,Q3,1,Ibis White,5,0,52057
 1549,Ford,Fiesta,0,Silver,205990,9,6750
 1550,Volkswagen,Passat,0,Grey,95891,3,21000
 1551,Volkswagen,Jetta,0,Blue,35395,2,19500
@@ -1565,7 +1564,7 @@
 1564,Ford,S-Max,0,Black,85293,3,21900
 1565,Volkswagen,Tiguan,0,Blue,68313,2,31500
 1566,Mercedes-Benz,E-Class,1,Black,29933,1,39995
-1567,Audi,A5,1,Brilliant Black,5,-1,53144
+1567,Audi,A5,1,Brilliant Black,5,0,53144
 1568,BMW,X3,1,Black,32757,2,43950
 1569,Volkswagen,Jetta,0,Grey,131700,5,10950
 1570,Nissan,Tiida,0,Bronze,146337,9,4950
@@ -1607,7 +1606,7 @@
 1606,Mercedes-Benz,C-Class,1,Blue,75655,3,26945
 1607,Volkswagen,Golf,0,Red,78000,2,19000
 1608,Renault,Kadjar,0,Red,109321,2,18250
-1609,Audi,S3,1,Ibis White,2,-1,65705
+1609,Audi,S3,1,Ibis White,2,0,65705
 1610,Volkswagen,Tiguan,0,Black,129494,5,16995
 1611,Volkswagen,T-Roc,0,Black,21000,2,22500
 1612,Kia,Sportage,0,Silver,40233,3,19995
@@ -1647,7 +1646,7 @@
 1646,Lexus,NX 300H,1,Sonic Titanium,44090,2,37945
 1647,Toyota,Prius+,1,Red,4736,0,33995
 1648,Volkswagen,Golf SV,0,Grey,23000,3,22000
-1649,Audi,A1,0,Ibis White,5,-1,29100
+1649,Audi,A1,0,Ibis White,5,0,29100
 1650,Jeep,Cherokee,0,Black,30166,4,22995
 1651,Toyota,Auris,0,Red,68656,5,12950
 1652,BMW,6 Series,1,Silver,67966,3,39995
@@ -1659,10 +1658,10 @@
 1658,Mercedes-Benz,GLA-Class,1,Grey,4153,0,43900
 1659,Lexus,GS300H,1,Morello Red,63795,2,35945
 1660,Nissan,Qashqai,0,Grey,98167,3,18900
-1661,Audi,e-tron,1,Navarra Blue,4,-1,88970
+1661,Audi,e-tron,1,Navarra Blue,4,0,88970
 1662,Volkswagen,Golf,1,White,1250,0,32945
 1663,Volkswagen,Polo,1,Black,67591,3,17350
-#1664,Mercedes-Benz,A-Class,0,White,$,-1,33580
+#1664,Mercedes-Benz,A-Class,0,White,$,0,33580
 1665,Kia,Sportage,0,Black,32439,2,24995
 1666,Audi,A6,1,White,46477,3,28950
 1667,MINI,Hatch,0,White,136791,4,12725
@@ -1685,7 +1684,7 @@
 1684,SEAT,Ateca,0,Beige,60000,2,23495
 1685,Renault,Clio,0,Red,47003,1,12700
 1686,Volkswagen,Golf SV,1,Black,68000,3,22450
-1687,Audi,Q3,1,Mythos Black,5,-1,47685
+1687,Audi,Q3,1,Mythos Black,5,0,47685
 1688,Volkswagen,Passat,1,Blue,210321,3,17950
 1689,Audi,A6,1,Black,20908,1,43450
 1690,Ford,Fiesta,1,Silver,35405,5,13450
@@ -1700,7 +1699,7 @@
 1699,Mercedes-Benz,E-Class,1,Black,15610,0,44945
 1700,Volkswagen,Tiguan,0,Grey,103535,2,27950
 1701,Audi,A6,1,Black,28623,2,36250
-1702,Audi,A1,0,Mythos Black,5,-1,29868
+1702,Audi,A1,0,Mythos Black,5,0,29868
 1703,Ford,Focus,0,White,72419,2,17495
 1704,Volkswagen,Golf SV,0,Black,52141,3,18500
 1705,Toyota,C-HR,1,Metalstream Metallic,57063,1,25999
@@ -1714,7 +1713,7 @@
 1713,Mitsubishi,ASX,0,Silver,80602,5,13995
 1714,Land Rover,Discovery,0,Grey,65124,1,39750
 1715,Volkswagen,Passat,1,White,3000,0,44945
-1716,Audi,Q3,1,Navarra Blue,5,-1,51205
+1716,Audi,Q3,1,Navarra Blue,5,0,51205
 1717,Hyundai,Kona,0,Orange,35199,1,18750
 1718,Volvo,V40,0,Black,109432,4,14850
 1719,Volkswagen,Touran,0,Silver,123002,5,16000
