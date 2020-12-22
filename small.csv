@@ -1,0 +1,50 @@
+,Brands,Models,Transmission,Colour,Mileage,Year,Seats,Doors,Prices
+0,Audi,A4,0,Black (Metallic),166965,4,5,4,15950
+1,Audi,A6,0,Black,130353,2,5,4,24500
+2,BMW,3 Series,0,White,225302,7,5,5,8950
+3,BMW,4 Series,0,Grey,109432,6,4,2,17995
+4,BMW,5 Series,1,Blue,141618,2,5,4,26869
+5,BMW,5 Series,0,Black,226911,8,$,4,8950
+6,Citroen,C4,0,White,120698,3,5,5,12999
+7,Ford,Focus,0,Black,85293,1,5,5,18999
+8,Ford,Focus,0,White,141618,3,5,5,13750
+9,Ford,Focus,0,Black,122307,3,5,5,13750
+10,Ford,Focus,0,Silver,159321,5,5,5,10500
+11,Ford,Focus,0,Blue,241395,13,$,3,5000
+12,Ford,Kuga,0,Blue,111042,2,5,5,21999
+13,Ford,Mondeo,0,Black,101386,2,5,5,17500
+14,Ford,Mondeo,0,Black,86902,2,5,5,17999
+15,Ford,Transit Tourneo,0,White,175414,7,3,5,6750
+16,Kia,Picanto,0,Red,56326,6,$,5,6000
+17,Mazda,CX-5,0,Red,114260,5,5,5,19495
+18,Mercedes-Benz,CLS-Class,1,Grey,241395,12,4,4,5500
+19,MINI,Hatch,0,Black,131963,3,4,3,14500
+20,Nissan,Leaf,1,Grey,41842,3,5,5,14500
+21,Nissan,Qashqai,0,Blue,38623,2,5,5,18500
+22,Nissan,Qashqai,0,Black (Metallic),127939,4,5,5,14999
+23,Opel,Corsa,0,Brown,120698,5,5,5,8500
+24,Opel,Insignia,1,Red,6786,0,5,5,35995
+25,Opel,Insignia,0,Black,172195,4,5,5,11250
+26,Opel,Insignia,0,Silver,233000,9,$,4,3500
+27,Peugeot,308,0,Silver,146446,3,5,5,11500
+28,Peugeot,407,0,Blue,257488,15,$,5,3500
+29,Renault,Scenic,0,Yellow,148056,13,5,5,350
+30,Skoda,Octavia,0,Grey,130353,2,5,5,17500
+31,Skoda,Octavia,0,Black,123916,2,5,5,17500
+32,Skoda,Octavia,0,Black,112651,2,5,5,16999
+33,Skoda,Octavia,0,Grey,148056,3,5,5,16500
+34,Skoda,Octavia,0,Blue,111042,3,5,5,16500
+35,Skoda,Octavia,0,Blue,168977,4,5,5,12999
+36,Toyota,YARIS,0,Silver,154493,12,5,5,4999
+37,Vauxhall,Corsa,0,Brown,120698,5,5,5,8500
+38,Vauxhall,Insignia,0,Black,172195,4,5,5,11250
+39,Volkswagen,Golf,0,Blue,148056,4,5,5,13999
+40,Volkswagen,Golf,0,Black,95813,5,$,5,14950
+41,Volkswagen,Passat,0,Grey,61153,2,5,4,22999
+42,Volkswagen,Passat,0,Silver,70809,2,5,4,21999
+43,Volkswagen,Passat,1,Silver,144837,2,5,5,19999
+44,Volkswagen,Passat,0,Blue,151274,3,5,5,16500
+45,Volkswagen,Tiguan,0,Blue,289674,9,5,5,9250
+46,Volvo,S60,0,Black,159321,3,5,4,15999
+47,Volvo,V40,1,Grey,82074,2,5,5,19999
+48,Volvo,V40,0,Black,185070,3,5,5,15500

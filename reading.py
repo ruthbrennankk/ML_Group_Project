@@ -8,8 +8,11 @@ def read(filename):
     df = encode_df(filename)
     print(df.head())
 
-    X = df.iloc[:,:-1].to_numpy()
-    y = normalise(df.iloc[:,-1:].to_numpy())
+    # X = df.iloc[:,:-1].to_numpy()
+    # y = normalise(df.iloc[:,-1:].to_numpy())
+
+    X = df.iloc[:, :-1].to_numpy()
+    y = df.iloc[:, -1:].to_numpy()
 
     return (X, y)
 
@@ -48,7 +51,11 @@ def encode_df(filename):
     # # now drop the original 'country' column (you don't need it anymore)
     # df.drop(['Colour'], axis=1, inplace=True)
 
-    print(df.head())
+    price = df['Price']
+    df.drop(['Price'], axis=1, inplace=True)
+    df = pd.concat([df, price], axis=1)
+
+    # print(df.head())
     return df
 
 def readNN(filename):
@@ -97,7 +104,7 @@ def plotErrorBar(x, mean, var, xlabel, title, image):
 def read_df(filename):
     # og_df = pd.read_csv('kerry_no_label.csv', comment='#')
     og_df = pd.read_csv(filename, comment='#')
-    print(og_df.head())
+    # print(og_df.head())
 
     # df now has two columns: name and country
     df = pd.DataFrame({
@@ -109,8 +116,9 @@ def read_df(filename):
             'Year': (og_df.iloc[:, 6]),
             'Price': (og_df.iloc[:, 7])
         })
-    print(df.head())
+    # print(df.head())
 
-    X = df.iloc[:,:-1].to_numpy()
-    y = (df.iloc[:,-1:].to_numpy())
-    return (X, y)
+    # X = df.iloc[:,:-1].to_numpy()
+    # y = (df.iloc[:,-1:].to_numpy())
+    # return (X, y)
+    return df
