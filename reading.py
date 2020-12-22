@@ -3,24 +3,65 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def read(filename):
-    df = pd.read_csv(filename, comment='#', header=None)
+    # df = pd.read_csv(filename, comment='#', header=None)
+
+    df = encode_df(filename)
     print(df.head())
 
-    X1 = normalise(df.iloc[:, 0])  # Brands
-    X2 = normalise(df.iloc[:, 1])  # model
-    X3 = normalise(df.iloc[:, 2])  # transmission
-    X4 = normalise(df.iloc[:, 3])  # Colour
-    X5 = normalise(df.iloc[:, 4])  # mileage
-    X6 = normalise(df.iloc[:, 5])  # year
+    # X1 = normalise(df.iloc[:, 0])  # Brands
+    # X2 = normalise(df.iloc[:, 1])  # model
+    # X3 = normalise(df.iloc[:, 2])  # transmission
+    # #X4 = normalise(df.iloc[:, 3])  # Colour
+    # X5 = normalise(df.iloc[:, 3])  # mileage
+    # X6 = normalise(df.iloc[:, 4])  # year
+    #
+    # # X = np.column_stack((X1,X2,X3,X4,X5,X6))  # Everything
+    # # X = np.column_stack((X2,X3,X4,X5,X6))  # Not Brand
+    # # X = np.column_stack((X1, X3, X4, X5, X6))  # Not Model
+    # X = np.column_stack((X1, X2, X3, X5, X6))  # Not Colour
 
-    # X = np.column_stack((X1,X2,X3,X4,X5,X6))  # Everything
-    # X = np.column_stack((X2,X3,X4,X5,X6))  # Not Brand
-    # X = np.column_stack((X1, X3, X4, X5, X6))  # Not Model
-    X = np.column_stack((X1, X2, X3, X5, X6))  # Not Colour
+    X = df.iloc[:,:-1]
 
     y = normalise(df.iloc[:, 6])
 
     return (X, y)
+
+def encode_df(filename):
+    # og_df = pd.read_csv('kerry_no_label.csv', comment='#')
+    og_df = pd.read_csv(filename, comment='#')
+    print(og_df.head())
+
+    # df now has two columns: name and country
+    df = pd.DataFrame({
+            'Brands': og_df.iloc[:, 1],
+            'Models': og_df.iloc[:, 2],
+            'Transmission': og_df.iloc[:, 3],
+            #'Colour': og_df.iloc[:, 4],
+            'Mileage': normalise(og_df.iloc[:, 5]),
+            'Year': normalise(og_df.iloc[:, 6]),
+        })
+    print(df.head())
+
+    # Brand
+    # use pd.concat to join the new columns with your original dataframe
+    df = pd.concat([df, pd.get_dummies(df['Brands'], prefix='brand')],axis=1)
+    # now drop the original 'country' column (you don't need it anymore)
+    df.drop(['Brands'], axis=1, inplace=True)
+
+    #Model
+    # use pd.concat to join the new columns with your original dataframe
+    df = pd.concat([df, pd.get_dummies(df['Models'], prefix='model')],axis=1)
+    # now drop the original 'country' column (you don't need it anymore)
+    df.drop(['Models'], axis=1, inplace=True)
+
+    # #Colour
+    # # use pd.concat to join the new columns with your original dataframe
+    # df = pd.concat([df, pd.get_dummies(df['Colour'], prefix='colour')],axis=1)
+    # # now drop the original 'country' column (you don't need it anymore)
+    # df.drop(['Colour'], axis=1, inplace=True)
+
+    print(df.head())
+    return df
 
 def readNN(filename):
     df = pd.read_csv(filename, comment='#', header=None)
@@ -62,5 +103,5 @@ def plotErrorBar(x, mean, var, xlabel, title, image):
     ax.set_xlabel(xlabel)
     ax.set_ylabel('Mean')
     plt.xticks(xi, x)
-    #fig.show()
-    fig.savefig(image)
+    fig.show()
+    #fig.savefig(image)

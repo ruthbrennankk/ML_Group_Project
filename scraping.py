@@ -38,7 +38,7 @@ def labelEncode(categories, car_df) :
 
 
 # Using readlines()
-file1 = open('not using/extra.txt', 'r')
+file1 = open('GalwayCars.txt', 'r')
 Lines = file1.readlines()
 
 urls = []
@@ -145,7 +145,7 @@ car_df = pd.DataFrame(data=d)
 # Label Encoding
 car_df = labelEncode(['Colour', 'Models','Brands'], car_df)
 
-car_df.to_csv('car2.csv')
+car_df.to_csv('GalwayCars.csv')
 
 #
 #     id_list = soup.find_all('li', class_='fpa-features__item')
