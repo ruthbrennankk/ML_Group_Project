@@ -8,21 +8,8 @@ def read(filename):
     df = encode_df(filename)
     print(df.head())
 
-    # X1 = normalise(df.iloc[:, 0])  # Brands
-    # X2 = normalise(df.iloc[:, 1])  # model
-    # X3 = normalise(df.iloc[:, 2])  # transmission
-    # #X4 = normalise(df.iloc[:, 3])  # Colour
-    # X5 = normalise(df.iloc[:, 3])  # mileage
-    # X6 = normalise(df.iloc[:, 4])  # year
-    #
-    # # X = np.column_stack((X1,X2,X3,X4,X5,X6))  # Everything
-    # # X = np.column_stack((X2,X3,X4,X5,X6))  # Not Brand
-    # # X = np.column_stack((X1, X3, X4, X5, X6))  # Not Model
-    # X = np.column_stack((X1, X2, X3, X5, X6))  # Not Colour
-
-    X = df.iloc[:,:-1]
-
-    y = normalise(df.iloc[:, 6])
+    X = df.iloc[:,:-1].to_numpy()
+    y = normalise(df.iloc[:,-1:].to_numpy())
 
     return (X, y)
 

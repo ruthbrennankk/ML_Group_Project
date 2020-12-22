@@ -1,30 +1,25 @@
-from sklearn.neighbors import KNeighborsRegressor
 import numpy as np
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error
 import math
+from sklearn.kernel_ridge import KernelRidge
 
 from reading import read, plotErrorBar
 
-def generate_gaussian_kernel_function(gamma):
-    weights = lambda dists: np.exp(-gamma * (dists ** 2))
-    return lambda dists: weights(dists) / np.sum(weights(dists))
-
-def crossValidationK(X, y, ks):
+def crossValidationC(X, y, Cs):
     newks = []
     yMeanValues = []
     yVarianceValues = []
     fold = 5
     gamma = 1
-    kernel = generate_gaussian_kernel_function(gamma)
 
-    for k in ks:
+    for C in Cs:
         means = []
         mean = 0
         kf = KFold(n_splits=fold)
         for train, test in kf.split(X):
-            #  kNN
-            model = KNeighborsRegressor(n_neighbors=k, weights=kernel).fit(X[train], y[train])
+
+            model = KernelRidge(alpha=1 / (2 * C), kernel='rbf', gamma=gamma).fit(X[train], y[train])
             ypred = model.predict(X[test])
 
             tmp = mean_squared_error(y[test], ypred)
@@ -40,11 +35,11 @@ def crossValidationK(X, y, ks):
             sum += tmp * tmp
         sum = sum / (fold - 1)
         yVarianceValues.append(math.sqrt(sum))
-        newks.append(float(k))
+        newks.append(float(C))
 
     npMeans = np.array(yMeanValues)
     npVar = np.array(yVarianceValues)
-    plotErrorBar(newks, npMeans, npVar, 'k', 'K vs Mean - kNN', 'errorbarK.png')
+    plotErrorBar(newks, npMeans, npVar, 'C', 'C vs Mean - kRR', 'errorbar.png')
 
 
 def crossValidationG(X, y, gammas):
@@ -52,16 +47,15 @@ def crossValidationG(X, y, gammas):
     yMeanValues = []
     yVarianceValues = []
     fold = 5
-    k = 500
+    C = 0.1
 
     for gamma in gammas:
         means = []
         mean = 0
-        kernel = generate_gaussian_kernel_function(gamma)
         kf = KFold(n_splits=fold)
         for train, test in kf.split(X):
-            #  kNN
-            model = KNeighborsRegressor(n_neighbors=k, weights=kernel).fit(X[train], y[train])
+
+            model = KernelRidge(alpha=1 / (2 * C), kernel='rbf', gamma=gamma).fit(X[train], y[train])
             ypred = model.predict(X[test])
 
             tmp = mean_squared_error(y[test], ypred)
@@ -81,7 +75,7 @@ def crossValidationG(X, y, gammas):
 
     npMeans = np.array(yMeanValues)
     npVar = np.array(yVarianceValues)
-    plotErrorBar(newgs, npMeans, npVar, 'Gamma', 'Gamma vs Mean - kNN, k=500', 'errorbar_KNN_G_k=500.png')
+    plotErrorBar(newgs, npMeans, npVar, 'Gamma', 'Gamma vs Mean - KRR, C=0.1', 'errorbar_KNN_G_k=500.png')
 
 
 def main():
@@ -90,7 +84,7 @@ def main():
 
     # Now you are all set to use these data to fit a KNN classifier.
     # Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.2)
-    crossValidationK(X, y, [1, 3, 5, 10, 20])
+    crossValidationC(X, y, [1, 3, 5, 10, 20])
     #crossValidationG(X, y, [0, 10, 25, 50, 100, 250, 500])
 
 main()
