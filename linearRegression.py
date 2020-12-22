@@ -51,7 +51,7 @@ def crossValidationC(X, y, cs):
 
     npMeans = np.array(yMeanValues)
     npVar = np.array(yVarianceValues)
-    plotErrorBar(newcs, npMeans, npVar, 'c', 'C vs Mean - Ridge (q=6)', 'errorbar_RC.png')
+    plotErrorBar(newcs, npMeans, npVar, 'c', 'C vs Mean - Ridge', 'errorbar_RC.png')
 
 def crossValQ(oldX, y, qi_range):
     fold = 5
