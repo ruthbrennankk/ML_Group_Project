@@ -3,7 +3,6 @@ import numpy as np
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error
 import math
-
 from reading import read, plotErrorBar
 
 def generate_gaussian_kernel_function(gamma):
@@ -90,7 +89,7 @@ def main():
 
     # Now you are all set to use these data to fit a KNN classifier.
     # Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.2)
-    #crossValidationK(X, y, [1, 3, 5, 10, 20, 50, 100, 250, 500])
-    crossValidationG(X, y, [0, 1, 3, 4, 5, 10, 25, 50])
+    crossValidationK(X, y, [1, 3, 5, 10, 20, 50, 100, 250, 500])
+    crossValidationG(X, y, [0, 1, 3, 4, 5, 10, 25, 50, 100])
 
 main()

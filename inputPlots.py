@@ -123,7 +123,6 @@ def inputFreq():
         else :
             count[8] = count[8] + counts_elements[i]
 
-
     axs.bar(labels, count)
     fig.autofmt_xdate()  # make space for and rotate the x-axis tick labels
     axs.set_title('Mileage Frequency')
