@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
 import math
 
-from reading import read, plotErrorBar
+from models.assist.reading import read, plotErrorBar
 
 def addFeatures(X, q):
     poly = PolynomialFeatures(q)
@@ -80,7 +80,7 @@ def crossValQ(oldX, y, qi_range):
 
 def main():
     # Read in the data (using pandas)
-    oldX,y = read('../Data/g_cars_final.csv')
+    oldX,y = read('../Data Gathering/Data/g_cars_final.csv')
 
     # equal to all combinations of powers of the two features up to power 5
     #X = addFeatures(oldX,1)

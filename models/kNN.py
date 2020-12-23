@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.model_selection import KFold
 from sklearn.metrics import mean_squared_error
 import math
-from reading import read, plotErrorBar
+from models.assist.reading import read, plotErrorBar
 
 def generate_gaussian_kernel_function(gamma):
     weights = lambda dists: np.exp(-gamma * (dists ** 2))
@@ -85,7 +85,7 @@ def crossValidationG(X, y, gammas):
 
 def main():
     #   Get Training Data
-    X, y = read('../Data/g_cars_final.csv')
+    X, y = read('../Data Gathering/Data/g_cars_final.csv')
 
     # Now you are all set to use these data to fit a KNN classifier.
     # Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.2)
