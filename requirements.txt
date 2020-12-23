@@ -4,6 +4,3 @@ matplotlib
 scikit-learn
 bs4
 nltk
-xgboost
-graphviz
-mglearn
