@@ -23,22 +23,22 @@ def crossValidationC(X, y, Ci_range):
         kf = KFold(n_splits=fold)
         for train, test in kf.split(X):
             #   Lasso
-            #model = Lasso(alpha=0.00016666666666666666).fit(X[train], y[train])
             model = Lasso(alpha=1/(2*Ci), max_iter=100000).fit(X[train], y[train])
             ypred = model.predict(X[test])
-            print(1/(2*Ci))
-            print(model.coef_)
+            # print(1/(2*Ci))
+            # print(model.coef_)
             temp.append(mean_squared_error(y[test], ypred))
         mean_error.append(np.array(temp).mean())
         std_error.append(np.array(temp).std())
 
     #plotErrorBar(Ci_range, npMeans, npVar, 'c', 'C vs Mean - Ridge', 'errorbar_RC.png')
-    plt.title("Cross Val C - LASSO")
-    plt.errorbar(Ci_range, mean_error, yerr=std_error, linewidth=3)
+    plt.title("C vs Mean - LASSO")
+    plt.rc('font',size=18)
+    plt.errorbar(Ci_range, mean_error, yerr=std_error, linewidth=3, c='r')
     plt.xlabel('C')
-    plt.ylabel('Mean Square Error')
-    #plt.savefig("errorbar_Lasso_C")
-    plt.show()
+    plt.ylabel('mean')
+    plt.savefig("errorbar_Lasso_C")
+    #plt.show()
 
 def crossValQ(oldX, y, qi_range):
     fold = 5
@@ -74,7 +74,7 @@ def main():
 
     # Cross val for C
     #crossValidationC(oldX, y, [0.1, 1, 5, 10, 50,75, 100, 1000, 1500, 2000, 3000])
-    crossValidationC(oldX, y, [1, 100, 1000, 5000, 6000, 7000, 8000, 9000, 10000])
+    crossValidationC(oldX, y, [1, 100, 1000, 5000, 7500, 10000, 15000, 20000])
     #Cross val for q (polynomials to add)
     #crossValQ(oldX, y, [1, 2, 3, 4, 5, 6, 7, 8])
 

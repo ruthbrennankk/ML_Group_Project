@@ -80,13 +80,13 @@ def crossValQ(oldX, y, qi_range):
 
 def main():
     # Read in the data (using pandas)
-    oldX,y = read('kerry_no_label.csv')
+    oldX,y = read('g_cars_final.csv')
 
     # equal to all combinations of powers of the two features up to power 5
     #X = addFeatures(oldX,1)
 
     # Cross val for C
-    crossValidationC(oldX, y, [0.001, 0.01, 0.1, 1, 10, 50, 100, 1000])
+    crossValidationC(oldX, y, [0.01, 0.1, 1, 2, 5, 10, 100, 1000])
 
     #Cross val for polynomial features
     #crossValQ(oldX, y, [1,2,3]) #,4,5,6,7,8,9,10,11,12
