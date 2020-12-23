@@ -101,7 +101,7 @@ def dummy_regr(Xtrain, Xtest, ytrain, ytest):
 
 def main():
     #Load data and hold back a test sample of size 0.2
-    X, y = read("g_cars_final.csv")
+    X, y = read("Data/g_cars_final.csv")
     Xtrain, Xtest, ytrain, ytest = train_test_split(X,y, test_size=0.2)
     lasso_regr(Xtrain, Xtest, ytrain, ytest)
     lin_regr(Xtrain, Xtest, ytrain, ytest)

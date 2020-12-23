@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from reading import read_df
 
 def inputScatter():
-    X,y = read_df('g_cars_final.csv')
+    X,y = read_df('Data/g_cars_final.csv')
 
     # Brand
     fig, axs = plt.subplots()
@@ -59,7 +59,7 @@ def inputScatter():
 
 
 def inputFreq():
-    X, y = read_df('g_cars_final.csv')
+    X, y = read_df('Data/g_cars_final.csv')
 
     # Brand
     fig, axs = plt.subplots()
