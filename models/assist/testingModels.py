@@ -3,13 +3,13 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn import linear_model
 from sklearn.linear_model import Lasso
 from sklearn.dummy import DummyRegressor
-from sklearn.preprocessing import PolynomialFeatures
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import r2_score
 import matplotlib.pyplot as plt
-from reading import read, plotErrorBar
+from models.assist.reading import read
+
 
 def generate_gaussian_kernel_function(gamma):
     weights = lambda dists: np.exp(-gamma * (dists ** 2))
@@ -48,8 +48,8 @@ def plot(name, model, Xtrain, Xtest, ytrain, ytest, filename):
     axs.set_xlabel('Mileage (km)')
     axs.set_ylabel('Price (€)')
     axs.legend(['Target', 'Predictions'])
-    #fig.show()
-    fig.savefig('Prediction Plots/' + filename + '_train_pred')
+    fig.show()
+    #fig.savefig('Plots/Prediction Plots/' + filename + '_train_pred')
 
     ypred = model.predict(Xtest)
     fig, axs = plt.subplots()
@@ -59,8 +59,8 @@ def plot(name, model, Xtrain, Xtest, ytrain, ytest, filename):
     axs.set_xlabel('Mileage (km)')
     axs.set_ylabel('Price (€)')
     axs.legend(['Target', 'Predictions'])
-    #fig.show()
-    fig.savefig('Prediction Plots/' + filename + '_test_pred')
+    fig.show()
+    #fig.savefig('Plots/Prediction Plots/' + filename + '_test_pred')
 
 def lasso_regr(Xtrain, Xtest, ytrain, ytest):
     C = 20000
@@ -101,7 +101,7 @@ def dummy_regr(Xtrain, Xtest, ytrain, ytest):
 
 def main():
     #Load data and hold back a test sample of size 0.2
-    X, y = read("Data/g_cars_final.csv")
+    X, y = read("Data Gathering/Data/g_cars_final.csv")
     Xtrain, Xtest, ytrain, ytest = train_test_split(X,y, test_size=0.2)
     lasso_regr(Xtrain, Xtest, ytrain, ytest)
     lin_regr(Xtrain, Xtest, ytrain, ytest)

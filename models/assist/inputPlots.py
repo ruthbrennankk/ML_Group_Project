@@ -1,11 +1,8 @@
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-from reading import read_df
+from models.assist.reading import read
 
-def inputScatter():
-    X,y = read_df('Data/g_cars_final.csv')
-
+def inputScatter(X, y):
     # Brand
     fig, axs = plt.subplots()
     axs.scatter( X[:,0], y, s=20, c='r', marker='+')
@@ -13,8 +10,8 @@ def inputScatter():
     plt.xticks(rotation=90)
     axs.set_xlabel('Brand')
     axs.set_ylabel('Price (€)')
-    # fig.show()
-    fig.savefig('input_scatter_brand')
+    fig.show()
+    #fig.savefig('Plots/InputPlots/input_scatter_brand')
 
     # # Model
     # fig, axs = plt.subplots()
@@ -34,8 +31,8 @@ def inputScatter():
     axs.set_title('Price vs Transmission')
     axs.set_xlabel('Transmission')
     axs.set_ylabel('Price (€)')
-    # fig.show()
-    fig.savefig('input_scatter_transmission')
+    fig.show()
+    #fig.savefig('Plots/InputPlots/input_scatter_transmission')
 
     # Mileage
     fig, axs = plt.subplots()
@@ -43,8 +40,8 @@ def inputScatter():
     axs.set_title('Price vs Mileage')
     axs.set_xlabel('Mileage (km)')
     axs.set_ylabel('Price (€)')
-    # fig.show()
-    fig.savefig('input_scatter_mileage')
+    fig.show()
+    #fig.savefig('Plots/InputPlots/input_scatter_mileage')
 
     # Age
     fig, axs = plt.subplots()
@@ -53,13 +50,12 @@ def inputScatter():
     axs.set_title('Price vs Age')
     axs.set_xlabel('Age (Years)')
     axs.set_ylabel('Price (€)')
-    # fig.show()
-    fig.savefig('input_scatter_age')
+    fig.show()
+    #fig.savefig('Plots/InputPlots/input_scatter_age')
 
 
 
-def inputFreq():
-    X, y = read_df('Data/g_cars_final.csv')
+def inputFreq(X, y):
 
     # Brand
     fig, axs = plt.subplots()
@@ -69,8 +65,8 @@ def inputFreq():
     axs.set_xlabel('Brands')
     axs.set_ylabel('Frequency')
     plt.xticks(rotation=90)
-    # fig.show()
-    fig.savefig('input_bar_brand')
+    fig.show()
+    #fig.savefig('Plots/InputPlots/input_bar_brand')
 
     # # Model
     # fig, axs = plt.subplots()
@@ -94,8 +90,8 @@ def inputFreq():
     axs.set_title('Transmission Frequency')
     axs.set_xlabel('Transmissions')
     axs.set_ylabel('Frequency')
-    # fig.show()
-    fig.savefig('input_bar_transmission')
+    fig.show()
+    # fig.savefig('input_bar_transmission')
 
     # Mileage
     fig, axs = plt.subplots()
@@ -128,8 +124,8 @@ def inputFreq():
     axs.set_title('Mileage Frequency')
     axs.set_xlabel('Mileage')
     axs.set_ylabel('Frequency')
-    # fig.show()
-    fig.savefig('input_bar_mileage')
+    fig.show()
+    #fig.savefig('input_bar_mileage')
 
     # Age
     fig, axs = plt.subplots()
@@ -138,8 +134,13 @@ def inputFreq():
     axs.set_title('Age Frequency')
     axs.set_xlabel('Ages')
     axs.set_ylabel('Frequency')
-    # fig.show()
-    fig.savefig('input_bar_age')
+    fig.show()
+    #fig.savefig('input_bar_age')
 
+def main():
+    X, y = read("Data Gathering/Data/g_cars_final.csv")
 
-inputFreq()
+    inputFreq(X, y)
+    inputScatter(X, y)
+
+main()

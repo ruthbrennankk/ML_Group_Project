@@ -1,12 +1,12 @@
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 
 from sklearn.linear_model import Lasso
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import KFold
 
-from reading import read, plotErrorBar
+from models.assist.reading import read
+
 
 def add_poly_features(inputX, powIn):
     from sklearn.preprocessing import PolynomialFeatures
@@ -67,7 +67,7 @@ def crossValQ(oldX, y, qi_range):
 
 def main():
     # Read in the data (using pandas)
-    oldX,y = read('../Data/g_cars_final.csv')
+    oldX, y = read("../Data Gathering/Data/g_cars_final.csv")
 
     # equal to all combinations of powers of the two features up to power 5
     # X = add_poly_features(oldX, 3)

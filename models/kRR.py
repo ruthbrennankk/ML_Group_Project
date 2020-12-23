@@ -5,7 +5,7 @@ import math
 from sklearn.kernel_ridge import KernelRidge
 from sklearn import linear_model
 
-from reading import read, plotErrorBar
+from models.assist.reading import read, plotErrorBar
 
 def crossValidationC(X, y, Cs):
     newks = []
