@@ -48,8 +48,8 @@ def plot(name, model, Xtrain, Xtest, ytrain, ytest, filename):
     axs.set_xlabel('Mileage (km)')
     axs.set_ylabel('Price (€)')
     axs.legend(['Target', 'Predictions'])
-    #fig.show()
-    fig.savefig('Prediction Plots/' + filename + '_train_pred')
+    fig.show()
+    #fig.savefig('Plots/Prediction Plots/' + filename + '_train_pred')
 
     ypred = model.predict(Xtest)
     fig, axs = plt.subplots()
@@ -59,8 +59,8 @@ def plot(name, model, Xtrain, Xtest, ytrain, ytest, filename):
     axs.set_xlabel('Mileage (km)')
     axs.set_ylabel('Price (€)')
     axs.legend(['Target', 'Predictions'])
-    #fig.show()
-    fig.savefig('Prediction Plots/' + filename + '_test_pred')
+    fig.show()
+    #fig.savefig('Plots/Prediction Plots/' + filename + '_test_pred')
 
 def lasso_regr(Xtrain, Xtest, ytrain, ytest):
     C = 20000

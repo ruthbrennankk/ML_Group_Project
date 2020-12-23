@@ -67,7 +67,7 @@ def crossValQ(oldX, y, qi_range):
 
 def main():
     # Read in the data (using pandas)
-    oldX,y = read('../Data Gathering/Data/g_cars_final.csv')
+    oldX, y = read("../Data Gathering/Data/g_cars_final.csv")
 
     # equal to all combinations of powers of the two features up to power 5
     # X = add_poly_features(oldX, 3)

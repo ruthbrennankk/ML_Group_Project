@@ -85,7 +85,7 @@ def crossValidationG(X, y, gammas):
 
 def main():
     #   Get Training Data
-    X, y = read('../Data Gathering/Data/g_cars_final.csv')
+    X, y = read("./Data Gathering/Data/g_cars_final.csv")
 
     # Now you are all set to use these data to fit a KNN classifier.
     # Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.2)
