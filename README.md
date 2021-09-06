@@ -1,6 +1,6 @@
 # ML_Group_Project
 ## About
-This is the repo for our 4th Year Machine Learning group project.  We tried to train regression models to predict the price of second hand cars being sold on Carzone.ie.
+This is the repo for our 4th Year Machine Learning group project.  We trained regression models to predict the price of second hand cars being sold on Carzone.ie.
 
 ## What is in the repo
 __Data Gathering__ has the scraping file that was used to scrape the data that was then used to train and test the models.  It also has a _Data_ folder containing the main three csv files used for this project with the final one being _g_cars_final.csv_.
